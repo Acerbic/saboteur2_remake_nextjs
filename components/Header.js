@@ -108,16 +108,6 @@ const Header = (props) => (
             nav#topnav ul li {
                 padding: 0 1em;
             }
-
-            nav a {
-                color: #FFB90F;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                text-decoration: none;
-            }
-
-            nav a.current {
-                color: #FF4500;
-            }
         `}</style>
     </header>
 )

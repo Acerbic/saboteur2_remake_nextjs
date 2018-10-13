@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { withRouter } from 'next/router'
 
+/**
+ * Menu link element for the main navigation. Tracks current page
+ * and highlights the "current" link accordingly
+ */
 const MenuLink = ({ children, router, href }) => {
 
     const active = router.pathname == href;
