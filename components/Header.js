@@ -3,7 +3,7 @@ import Link from 'next/link'
 const menu_items = [
     {
         "name": "Главная",
-        "src": "/index"
+        "src": "/"
     },
     {
         "name": "Миссии",
@@ -92,6 +92,7 @@ const Header = (props) => (
                 }
             </ul>
         </nav>
+        <hr></hr>
         <style jsx>{`
             header img {
                 padding-bottom: 15px;

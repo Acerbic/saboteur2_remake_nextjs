@@ -4,10 +4,10 @@ const footer = "Saboteur 2 - все об игре - Saboteur II - Avenging Angel
 const title = "Saboteur 2 - все об игре, коды, карты, секреты, прохождения, описания, подсказки"
 
 export default () => (
-    <Layout {...{footer, title}} >
+    <Layout {...{footer, title}} className="mono-column">
 
         <h1>Saboteur 2 - Avenging Angel</h1>
-        <img src="images/sab2_zx1.png" alt="Загрузочный экран игры" class="bordered" />
+        <img src="static/images/sab2_zx1.png" alt="Загрузочный экран игры" className="bordered" />
 
         <p>
             Этот сайт полностью посвящен одной из великих игр прошлого века - Saboteur 2.
@@ -41,7 +41,7 @@ export default () => (
             из всех 5 существующих релизов.
         </p>
 
-        <img src="images/videosab2.gif" alt="Фрагмент игрового процесса" />
+        <img src="static/images/videosab2.gif" alt="Фрагмент игрового процесса" />
 
         <p>Надеюсь, Вам будет интересно изучение этого ресурса.</p>
 
@@ -53,6 +53,5 @@ export default () => (
         <p>
             <a href="saboteur2_contacts.html">КОНТАКТЫ</a>
         </p>
-
     </Layout>
 )
