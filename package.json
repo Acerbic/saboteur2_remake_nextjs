@@ -4,5 +4,12 @@
   "description": "Remake of www.saboteur2.ru in nextjs",
   "main": "index.js",
   "author": "Anthony Cerbic <kuzzdra@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@bitbucket.org:GlebVarenov/saboteur2_remake_nextjs.git",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "reset-css": "^4.0.1"
+  }
 }
