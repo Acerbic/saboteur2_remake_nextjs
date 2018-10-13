@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import MenuLink from './MenuLink'
 
 const menu_items = [
     {
@@ -83,10 +84,10 @@ const Header = (props) => (
             <ul>
                 {
                     menu_items.map(item => (
-                        <li>
-                            <Link href={item.src}>
-                                <a>{item.name}</a>
-                            </Link>
+                        <li key={item.src}>
+                            <MenuLink href={item.src}>
+                                {item.name}
+                            </MenuLink>
                         </li>
                     ))
                 }
