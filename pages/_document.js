@@ -14,23 +14,12 @@ export default class MyDocument extends Document {
         return (
             <html lang="ru">
                 <Head>
-                    <link rel="stylesheet" href="static/reset.css"/>
+                    {/* <link rel="stylesheet" href="static/reset.css"/> */}
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
                 </body>
-                <style jsx>{`
-                    body {
-                        color: white;
-                        background: black;
-                        margin: 8px;
-                        font-size: 18px;
-                        text-align: center;
-
-                        font-family: Arial, Helvetica, sans-serif;
-                    }
-                `}</style>
             </html>
         )
     }

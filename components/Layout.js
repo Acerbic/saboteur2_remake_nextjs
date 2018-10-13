@@ -1,17 +1,20 @@
 import Header from './Header'
 import Footer from './Footer'
-import Head from 'next/head';
-
+import Head from 'next/head'
+import 'reset-css'
+import '../style.css'
 
 const Layout = (props) => (
-    <div>
+    <>
         <Head>
             <title>{props.title}</title>
         </Head>
         <Header />
-        {props.children}
+        <article className={props.className}>
+            {props.children}
+        </article>
         <Footer>{props.footer}</Footer>
-    </div>
+    </>
 )
 
 export default Layout
