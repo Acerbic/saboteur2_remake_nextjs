@@ -121,5 +121,13 @@ export default () => (
                 </figcaption>
             </figure>
         </section>
+        <style jsx>{`
+            figure {
+                margin-bottom: 4.6em;
+            }
+            figcaption {
+                margin-top: 1.35em;
+            }
+        `}</style>
     </Layout>
 )

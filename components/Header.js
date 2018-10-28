@@ -107,17 +107,36 @@ const Header = ({ page, router }) => {
             <hr />
 
             <style jsx>{`
-                header img {
-                    padding-bottom: 15px;
+                header {
+                    overflow: hidden;
                 }
 
-                nav#topnav ul {
+                div#header-logo {
+                    padding-bottom: 0.833em;
+                    position: relative;
+                    left: 50%;
+                }
+                div#header-logo a {
+                    /* center the overflow, since the 100% is in reference to actual
+                    width - i.e. after clamping by min-width and max-width */
+                    margin-left: -100%;
+                }
+
+                div#header-logo img {
+                    /* this results in parent's width, but clamped between 400 and 640 */
+                    width: 100%;
+                    /* display:block; */
+                    max-width: 640px;
+                    min-width: 400px; /* overflow starts below this */
+                }
+
+                ul#navigation {
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
                 }
 
-                nav#topnav ul li {
+                ul#navigation li {
                     padding: 0 1em;
                 }
             `}</style>

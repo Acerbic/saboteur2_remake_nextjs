@@ -9,60 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/**** header - logo and nav *****/
-header {
-    overflow: hidden;
-}
-
-div#header-logo {
-    padding-bottom: 0.833em;
-    position: relative;
-    left: 50%;
-}
-div#header-logo a {
-    /* center the overflow, since the 100% is in reference to actual
-    width - i.e. after clamping by min-width and max-width */
-    margin-left: -100%;
-}
-
-div#header-logo img {
-    /* this results in parent's width, but clamped between 400 and 640 */
-    width: 100%;
-    /* display:block; */
-    max-width: 640px;
-    min-width: 400px; /* overflow starts below this */
-}
-
-ul#navigation {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-ul#navigation li {
-    padding: 0 1em;
-}
-
-ul#navigation a {
-    color: #FFB90F;
-    font-family: Impact, 'Oswald', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-/* highlight current page */
-ul#navigation a.current {
-    color: #FF4500;
-}
-
 /* *************************************** */
-
-a.footer {
-    color: red;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 a {
     text-decoration: none;
@@ -99,13 +46,8 @@ img {
 img.bordered {
     border: solid 0.1111em; /* 2px */
     border-color: inherit;
-}
-
-img.bordered {
-    /* -2px compensate for border offset when downscaling*/
     margin-left: -0.1111em;
 }
-
 
 p {
     margin-top: 1.25em;
@@ -135,104 +77,6 @@ p {
 {
     max-width: 547px; /* defaults to images on missions pages - bc why not? */
     margin-bottom: 2em;
-}
-
-/****** contents of individual pages (tweaks) ********/
-article#article-missions section figcaption {
-    margin-top: 1.35em;
-}
-
-article#article-missions .flex-container > figure {
-    margin-bottom: 4.6em;
-}
-
-/********************************* */
-ul#cameras-list li {
-    margin-bottom: 4em;
-}
-
-/********************************** */
-section#panel-messages {
-    margin-top: 2em;
-}
-
-section#panel-messages h4 {
-    font-size: 1.3em;
-    margin-top: 0.8em;
-}
-
-section#panel-messages h4+p {
-    margin-top: 0;
-}
-
-section#panel-messages li {
-    margin-bottom: 2em;
-}
-
-/********************************* */
-div#weapons figure {
-    min-width: 25%;
-    margin: 1em 0;
-}
-
-/********************************* */
-#map-container {
-    width: 90%;
-    margin: 0 auto;
-    overflow: scroll;
-    max-height: 90vh;
-}
-
-#map-container img {
-    /* restore the fat map in all its gOry */
-    max-width: none;
-}
-
-/******************************** */
-article#article-secrets li {
-    min-width: 20%;
-    margin: 0 0.5em 2em;
-}
-
-article#article-press section figure {
-    max-width: 100%;
-    overflow: hidden;
-}
-article#article-press section figure img {
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-article#article-history figure {
-    margin-bottom: 3em;
-}
-
-article#article-history .image-description {
-    font-style: italic;
-    font-size: 0.9em;
-}
-
-article#article-music ul.flex-container {
-    justify-content: center;
-    margin-top: 0.5em;
-}
-article#article-music ul.flex-container li {
-    min-width: 8em;
-    padding: 0 1em;
-    margin-bottom: unset;
-}
-iframe[name=mus_subpage] {
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 100%; /* keep within screen */
-}
-
-#article-play a {
-    font-size: 1em;
-    text-decoration: underline;
-    font-style: italic;
-    font-family: Arial;
-    color: lightskyblue;
 }
 
 /***** subpages ******/
@@ -269,82 +113,6 @@ p.update-warning {
 }
 p.update-warning a {
     color: chocolate;
-}
-
-/***** disclaimer *****/
-div#disclaimer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    font-size: 5em;
-    height: 1em;
-    width: 0.5em;
-    overflow: hidden;
-
-    text-align: left;
-}
-
-div#disclaimer div#corner {
-    /* height: 1em; */
-    /* width: 0.5em; */
-    border-left: 0.5em solid gold;
-    border-top: 0.5em solid transparent;
-    border-bottom: 0.5em solid transparent;
-    /* box-sizing: border-box; */
-    position: relative; /* makes z-index applicable to this */
-}
-
-div#disclaimer div#anchor {
-    font-weight: bold;
-    color: red;
-    line-height: 2em;
-    padding-left: 0.1em;
-    font-size: 0.5em;
-
-    /* putting this over #corner */
-    position: relative;
-    top: -2em;
-}
-
-div#disclaimer div#popup {
-    visibility: hidden;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0; /* put this under #corner */
-    min-height: 1em;
-
-    padding-left: 0.5em; /* give space to #corner */
-
-    display: flex;
-    align-items: center;
-    background-color: rgba(36, 112, 141, 0.9);
-}
-
-div#disclaimer:hover div#popup {
-    visibility: visible;
-}
-
-div#disclaimer-message {
-    width: 100%;
-    font-size: 0.2em;
-    line-height: 1.5em;
-
-    padding: 1em;
-
-    color: gold;
-    text-shadow: 1px 2px gray;
-}
-
-div#disclaimer-message a {
-    text-shadow: none;
-    color: navy;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-decoration: none;
-    font-size: 1em;
 }
 
 /* iPhone 6-8 Plus */

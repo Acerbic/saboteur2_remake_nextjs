@@ -14,6 +14,7 @@ const MenuLink = ({ href, active, children }) => (
                 color: #FFB90F;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 text-decoration: none;
+                font-size: 1em;
             }
 
             a.current {

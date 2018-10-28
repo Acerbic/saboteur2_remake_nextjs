@@ -27,5 +27,12 @@ export default () => (
         <p>
             <Link href="saboteur2_contacts"><a>КОНТАКТЫ</a></Link>
         </p>
+
+        <style jsx>{`
+            article#article-secrets li {
+                min-width: 20%;
+                margin: 0 0.5em 2em;
+            }
+        `}</style>
     </Layout>
 )

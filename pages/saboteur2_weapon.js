@@ -84,5 +84,11 @@ export default () => (
                 <img src="static/images/saboteur_on_bike.png" alt="" width="170" height="122"/>
             </figure>
         </div>
+        <style jsx>{`
+            div#weapons figure {
+                min-width: 25%;
+                margin: 1em 0;
+            }
+        `}</style>
     </Layout>
 )

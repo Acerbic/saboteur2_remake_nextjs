@@ -4,7 +4,7 @@ const title = "Saboteur 2 - панель управления в игре, ра�
 const footer_note = "Описание панели в игре Saboteur 2. Расшифровка получаемых сообщений." 
 
 export default () => (
-    <Layout {...{footer_note, title, meta_descr}} id="article-panel" className="mono-column">
+    <Layout {...{footer_note, title, meta_descr}} id="article-panel">
         <h1>Панель управления и сообщения.</h1>
         <section id="panel-overview">
             <h2>
@@ -103,5 +103,23 @@ export default () => (
                 </li>
             </ul>
         </section>
+        <style jsx>{`
+            section#panel-messages {
+                margin-top: 2em;
+            }
+
+            section#panel-messages h4 {
+                font-size: 1.3em;
+                margin-top: 0.8em;
+            }
+
+            section#panel-messages h4+p {
+                margin-top: 0;
+            }
+
+            section#panel-messages li {
+                margin-bottom: 2em;
+            }
+        `}</style>
     </Layout>
 )

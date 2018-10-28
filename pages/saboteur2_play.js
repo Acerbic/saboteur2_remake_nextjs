@@ -27,5 +27,15 @@ export default () => (
             <a href="https://romsmania.cc/roms/zx-spectrum/saboteur-ii-avenging-angel-1987-durell-software-268005">этого</a> 
             потребуется скачать эмулятор по ссылке выше.
         </p>
+
+        <style jsx>{`
+            #article-play a {
+                font-size: 1em;
+                text-decoration: underline;
+                font-style: italic;
+                font-family: Arial;
+                color: lightskyblue;
+            }
+        `}</style>
     </Layout>
 )

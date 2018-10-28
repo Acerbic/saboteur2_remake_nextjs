@@ -99,6 +99,15 @@ export default () => (
                 <img src="static/images/statya_ComputerGamer2500045.jpg" className="bordered" alt="Скан страницы журнала" width="898" height="567"/>
             </figure>
         </section>
-
+        <style jsx>{`
+            article#article-press section figure {
+                max-width: 100%;
+                overflow: hidden;
+            }
+            article#article-press section figure img {
+                box-sizing: border-box;
+                max-width: 100%;
+            }
+        `}</style>
     </Layout>
 )

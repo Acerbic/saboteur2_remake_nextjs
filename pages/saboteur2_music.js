@@ -42,8 +42,25 @@ export default () => (
             <li><Link href="saboteur2_mus_endika"><a target="mus_subpage">Endika Fernandez - techno-mix</a></Link></li>
         </ul>
 
-        <iframe name="mus_subpage" src="saboteur2_mus_zx48k_sp" frameborder="0" width="780px" height="550px"
+        <iframe name="mus_subpage" src="saboteur2_mus_zx48k_sp" frameBorder="0" width="780px" height="550px"
                 title="Страница с плеером музыки (переключается между треками ссылками выше)"
         ></iframe>
+
+        <style jsx>{`
+            article#article-music ul.flex-container {
+                justify-content: center;
+                margin-top: 0.5em;
+            }
+            article#article-music ul.flex-container li {
+                min-width: 8em;
+                padding: 0 1em;
+                margin-bottom: unset;
+            }
+            iframe[name=mus_subpage] {
+                margin: 0 auto;
+                overflow: hidden;
+                max-width: 100%; /* keep within screen */
+            }
+        `}</style>
     </Layout>
 )

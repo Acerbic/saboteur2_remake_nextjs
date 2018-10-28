@@ -22,6 +22,20 @@ export default () => (
         <div id="map-container">
             <img src="static/images/saboteur2_map.png" alt="ОЧЕНЬ большой файл с картой" width="8192" height="4608"/>
         </div>
+        <style jsx>{`
+        #map-container {
+            width: 90%;
+            margin: 0 auto;
+            overflow: scroll;
+            max-height: 90vh;
+        }
+
+        #map-container img {
+            /* restore the fat map in all its gOry */
+            max-width: none;
+        }
+
+        `}</style>
     </Layout>
 )
 

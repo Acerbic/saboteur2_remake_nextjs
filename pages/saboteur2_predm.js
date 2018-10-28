@@ -67,5 +67,8 @@ export default () => (
                 </p>
             </div>
         </section>
+        <style jsx>{`
+            ul#cameras-list li { margin-bottom: 4em; }
+        `}</style>
     </Layout>
 )

@@ -54,5 +54,16 @@ export default () => (
             <img src="static/images/sab1_2.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
             <img src="static/images/sab1_3.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
         </figure>
+
+        <style jsx>{`
+            article#article-history figure {
+                margin-bottom: 3em;
+            }
+
+            article#article-history .image-description {
+                font-style: italic;
+                font-size: 0.9em;
+            }
+        `}</style>
     </Layout>
 )
