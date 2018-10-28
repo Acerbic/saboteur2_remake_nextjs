@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import MenuLink from './MenuLink'
+import { withRouter } from 'next/router'
 
 const menu_items = [
     {
@@ -72,45 +73,56 @@ const menu_items = [
     }
 ]
 
-const Header = (props) => (
-    <header>
-        <Link href="/">
-            <a>
-                <img src="static/images/banner.png" alt="" />
-            </a>
-        </Link>
-        
-        <nav id="topnav">
-            <ul>
-                {
-                    menu_items.map(item => (
-                        <li key={item.src}>
-                            <MenuLink href={item.src}>
-                                {item.name}
-                            </MenuLink>
-                        </li>
-                    ))
+const Header = ({ page, router }) => {
+    
+    let active_path = page ? '/'+page : router.pathname;
+    if (active_path == '/index') active_path = '/';
+
+    return (
+        <header>
+            <div id="header-logo">
+                <Link href="/">
+                    <a>
+                        <img 
+                            src="static/images/banner.png" alt="Saboteur 2 in custom font" width="640" height="125" 
+                            srcSet="static/images/320x_banner.png 320w, static/images/480x_banner.png 480w, static/images/banner.png 640w"
+                            sizes="(max-width: 320px) 320px, (max-width: 480px) 464px, 600px"
+                        /> 
+                    </a>
+                </Link>
+            </div>
+            <nav>
+                <ul id="navigation">
+                    {
+                        menu_items.map(item => (
+                            <li key={item.src}>
+                                <MenuLink href={item.src} active={item.src === active_path}>
+                                    {item.name}
+                                </MenuLink>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </nav>
+            <hr />
+
+            <style jsx>{`
+                header img {
+                    padding-bottom: 15px;
                 }
-            </ul>
-        </nav>
-        <hr></hr>
-        <style jsx>{`
-            header img {
-                padding-bottom: 15px;
-            }
 
-            nav#topnav ul {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
+                nav#topnav ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
 
-            nav#topnav ul li {
-                padding: 0 1em;
-            }
-        `}</style>
-    </header>
-)
+                nav#topnav ul li {
+                    padding: 0 1em;
+                }
+            `}</style>
+        </header>
+    );
+}
 
-export default Header
-
+export default withRouter(Header)
