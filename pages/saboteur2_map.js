@@ -5,7 +5,7 @@ const title = "Saboteur 2 - подробная карта здания, map, с�
 
 
 export default () => (
-    <Layout {...{footer_note, title, meta_descr}}>
+    <Layout {...{title, meta_descr}}>
         <h1>Карта Saboteur 2</h1>
 
         <p>
@@ -38,5 +38,3 @@ export default () => (
         `}</style>
     </Layout>
 )
-
-//{% block footer %})
