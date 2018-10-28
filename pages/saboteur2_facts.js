@@ -1,9 +1,10 @@
 import Layout from "../components/Layout"
-const title = "Saboteur 2 - интересные факты, фотографии, скриншоты, секреты, описания, подсказки и тайны"
-const footer = "Все факты и мифы Saboteur 2. Узнай больше."
+const meta_descr = "Интересные факты о Saboteur 2. Собрано все самое любопытное и загадочное. Вся правда об игре." 
+const title = "Saboteur 2 - интересные факты, фотографии, скриншоты, секреты, описания, подсказки и тайны" 
+const footer_note = "Все факты и мифы Saboteur 2. Узнай больше." 
 
 export default () => (
-    <Layout {...{footer, title}} id="article-facts" className="mono-column">
+    <Layout {...{footer_note, title, meta_descr}} id="article-facts" className="mono-column">
         <h1>Интересные факты</h1>
 
         <h2>Добавочная комната</h2>
@@ -15,7 +16,7 @@ export default () => (
             ее нет.
         </p>
 
-        <img src="static/images/facts1.jpg" className="bordered" alt=""/>
+        <img src="static/images/facts1.jpg" className="bordered" alt="" width="393" height="246"/>
 
         <h2>Полетит, не полетит?</h2>
 
@@ -32,7 +33,7 @@ export default () => (
             ракеты. Вы можете видеть это сами
         </p>
 
-        <img src="static/images/facts1-2.jpg" className="bordered" alt=""/>
+        <img src="static/images/facts1-2.jpg" className="bordered" alt="" width="265" height="246"/>
 
         <p>
             Предположительно, NINA (Нина) - имя нашей Нинзя. В описаниях этой игры говорится именно о Нине, правда, 
@@ -41,7 +42,7 @@ export default () => (
             игры в разделе High Scores:
         </p>
 
-        <img src="static/images/facts-hscores.png" className="bordered" alt=""/>
+        <img src="static/images/facts-hscores.png" className="bordered" alt="" width="524" height="403"/>
 
         <p>
             Рядом с CLIVE (Clive Townsend - создатель Saboteur 2), прямо под ним - имя некой Nina Jane. Разработчик не 
@@ -59,7 +60,7 @@ export default () => (
             изначально вместо Кошек (Puma) должны были быть... ...СОБАКИ
         </p>
 
-        <img src="static/images/facts2.jpg" className="bordered" alt=""/>
+        <img src="static/images/facts2.jpg" className="bordered" alt="" width="165" height="123"/>
 
         <p>
             Собака хорошо видна на этой картинке. Видимо разработчики хотели перенести собак из первого Саботёра 
@@ -75,7 +76,7 @@ export default () => (
             блин, а рядом, СПРАВА от него (на ПРАВУЮ часть шахты) -
         </p>
 
-        <img src="static/images/lift_gluk1.jpg" className="bordered" alt=""/>
+        <img src="static/images/lift_gluk1.jpg" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             то мы сможем поехать вниз, как обычно, стоя на лифтовом блине, но двигаться будем не по направляющей 
@@ -83,19 +84,19 @@ export default () => (
             в итоге получится:
         </p>
 
-        <img src="static/images/lift_gluk2.png" className="bordered" alt=""/>
+        <img src="static/images/lift_gluk2.png" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Что еще интересно, поехать ВВЕРХ при этом уже не получиться. Только вниз.
         </p>
 
-        <img src="static/images/lift_gluk3.png" className="bordered" alt=""/>
+        <img src="static/images/lift_gluk3.png" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Но зато можно СПРЫГНУТЬ в шахту:
         </p>
 
-        <img src="static/images/lift_gluk4.png" className="bordered" alt=""/>
+        <img src="static/images/lift_gluk4.png" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Самое любопытное то, что эта "ошибка" (или нет?) видимо принципиально сохранена и на других платформах, для 
@@ -107,7 +108,7 @@ export default () => (
 
         <h2>"Странный" андроид</h2>
 
-        <img src="static/images/android_gluks.gif" className="bordered" alt=""/>
+        <img src="static/images/android_gluks.gif" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             (будет описано позже)

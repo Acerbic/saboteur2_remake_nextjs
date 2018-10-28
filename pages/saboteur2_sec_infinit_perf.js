@@ -1,10 +1,12 @@
+import Link from "next/link"
 import Layout from "../components/Layout"
-const title = "Saboteur 2 - все секреты и тайны, коды, бессмертие, перфокарты, ракета, тайная комната, телепорт, таймер, secrets"
-const footer = "Saboteur 2 и его тайны. Секреты которых вы не знали."
-// {% set page_menu_item = 'saboteur2_secret.html' %}
+const meta_descr = "Секреты Saboteur 2. Описаны все секреты, показаны все тайны, не упущено абсолютно ничего." 
+const title = "Saboteur 2 - все секреты и тайны, коды, бессмертие, перфокарты, ракета, тайная комната, телепорт, таймер, secrets" 
+const footer_note = "Saboteur 2 и его тайны. Секреты которых вы не знали." 
+const page_menu_item = 'saboteur2_secret' 
 
 export default () => (
-    <Layout {...{footer, title}} className="mono-column">
+    <Layout {...{footer_note, title, meta_descr, page_menu_item}} className="mono-column">
         <h1>Секреты</h1>
 
         <h2>Ящик с "бесконечными" перфокартами</h2>
@@ -17,39 +19,39 @@ export default () => (
             Летим на дельтоплане до самого конца, пока Саботер сам не спрынет с него. Окажемся на козырьке:
         </p>
 
-        <img src="static/images/secret2_1.png" className="bordered" alt=""/>
+        <img src="static/images/secret2_1.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Далее, спускаемся ВНИЗ, бежим ВЛЕВО, снова ВНИЗ, бежим 2 экрана ВПРАВО, потом ВНИЗ до упора (2 экрана), потом ВЛЕВО, будет вот такое препятствие-"ездилка":
         </p>
 
-        <img src="static/images/secret2_2.png" className="bordered" alt=""/>
+        <img src="static/images/secret2_2.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Синхронно пробегаем по этой "ездилке" ВЛЕВО, теперь ВНИЗ до упора (3 экрана), как спуститесь, бегите ВПРАВО на 2 экрана, потом ВНИЗ - увидите комнату с ДВУМЯ лестницами ведущими вниз и двумя охранниками:
         </p>
 
-        <img src="static/images/secret2_3.png" className="bordered" alt=""/>
+        <img src="static/images/secret2_3.png" className="bordered" alt="" width="255" height="170"/>
         <p>
             По ЛЮБОЙ из этиз лестниц спускаетесь на 4 этажа ВНИЗ и бегите ВЛЕВО. Через 2 экрана окажитесь в переходе в подземелье:
         </p>
 
-        <img src="static/images/secret2_4.png" className="bordered" alt=""/>
+        <img src="static/images/secret2_4.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Забегаете туда, бежите еще 4 экрана ВЛЕВО, и окажитесь на лестнице, ведущей только ВНИЗ:
         </p>
 
-        <img src="static/images/secret2_5.png" className="bordered" alt=""/>
+        <img src="static/images/secret2_5.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Спускаетесь по этой лестнице на 4 этажа ВНИЗ и там увидите ответвление ВПРАВО. Идите туда - будет тупик, и там находится ящик "сбесконечными" перфокартами: Вот это место:
         </p>
 
-        <img src="static/images/secret2.png" className="bordered" alt=""/>
+        <img src="static/images/secret2.png" className="bordered" alt="" width="490" height="283"/>
 
         <p>
-            <a href="saboteur2_secret.html">НАЗАД</a>
+            <Link href="saboteur2_secret"><a>НАЗАД</a></Link>
         </p>
     </Layout>
 )

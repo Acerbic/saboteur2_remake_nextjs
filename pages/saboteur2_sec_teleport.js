@@ -1,10 +1,12 @@
+import Link from "next/link"
 import Layout from "../components/Layout"
-const title = "Saboteur 2 - все секреты и тайны, коды, бессмертие, перфокарты, ракета, тайная комната, телепорт, таймер, secrets"
-const footer = "Saboteur 2 и его тайны. Секреты которых вы не знали."
-// {% set page_menu_item = 'saboteur2_secret.html' %}
+const meta_descr = "Секреты Saboteur 2. Описаны все секреты, показаны все тайны, не упущено абсолютно ничего." 
+const title = "Saboteur 2 - все секреты и тайны, коды, бессмертие, перфокарты, ракета, тайная комната, телепорт, таймер, secrets" 
+const footer_note = "Saboteur 2 и его тайны. Секреты которых вы не знали." 
+const page_menu_item = 'saboteur2_secret' 
 
 export default () => (
-    <Layout {...{footer, title}} className="mono-column">
+    <Layout {...{footer_note, title, meta_descr, page_menu_item}} className="mono-column">
         <h1>Секреты</h1>
 
         <h2>Телепорт</h2>
@@ -12,7 +14,7 @@ export default () => (
         <p>
             Также, в здании находится точка телепортации. Это место находиться СЛЕВА от тайной комнаты, вход в которое 
             позволяет мгновенно оказаться на противоположенной (правой) стороне здания. Вы в буквальном смысле 
-            "вылетаете" на уровне "D", если ориентироваться по лифтам.<br />
+            "вылетаете" на уровне "D", если ориентироваться по лифтам.<br/>
             Ниже показано как добраться, обнаружить и использовать телепорт:
         </p>
 
@@ -20,27 +22,27 @@ export default () => (
             Летим на дельтоплане до самого конца, пока Саботер сам не спрынет с него. Окажемся на козырьке:
         </p>
 
-        <img src="static/images/secret3_1.png" className="bordered" alt=""/>
+        <img src="static/images/secret3_1.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Далее, бегите ВЛЕВО, потом на 2 экрана ВВЕРХ, теперь бегите НАЛЕВО, спрыгиваете ВНИЗ, падаете, пока не 
             окажитесь на козырьке c канатной дорожкой:
         </p>
 
-        <img src="static/images/secret3_2.png" className="bordered" alt=""/>
+        <img src="static/images/secret3_2.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Бегите по веревке 2 экрана ВЛЕВО, не останавливаясь, пока не добежите до вышки с андроидом-охранником:
         </p>
 
-        <img src="static/images/secret3_3.png" className="bordered" alt=""/>
+        <img src="static/images/secret3_3.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             далее, спускаемся ВНИЗ до упора и бежим на 2 экрана ВЛЕВО. Оказываемся на краю здания, и падаем ВНИЗ. 
             Приземляемся на лужайке с мертвым деревом:
         </p>
 
-        <img src="static/images/secret3_4.png" className="bordered" alt=""/>
+        <img src="static/images/secret3_4.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             А теперь - отбегаем в ЛЕВУЮ часть экрана, и, разбегаясь - ПРЫГАЕМ прямо в стену, которая будет у нас СПРАВА.
@@ -52,7 +54,7 @@ export default () => (
             Сдесь подробно показано действие телепорта:
         </p>
 
-        <img src="static/images/secret_teleport.gif" className="bordered" alt=""/>
+        <img src="static/images/secret_teleport.gif" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Помимо прямого использования телепорта, как способа быстрого перемещения на противоположенную сторону 
@@ -60,7 +62,7 @@ export default () => (
         </p>
 
         <p>
-            <a href="saboteur2_secret.html">НАЗАД</a>
+            <Link href="saboteur2_secret"><a>НАЗАД</a></Link>
         </p>
     </Layout>
 )

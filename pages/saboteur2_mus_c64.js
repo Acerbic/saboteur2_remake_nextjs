@@ -1,6 +1,6 @@
-// {% extends '../layout-subpages-mus.twig' %}
-// {% set audiofile = 'sab2_c64.mp3' %}
+//{% extends '../layout-subpages-mus.twig' %}
+const audiofile = 'sab2_c64' 
 
 export default () => (
-<img src="static/images/commodore_c64_.jpg" alt="" />
+    <img src="static/images/commodore_c64_.jpg" alt="Изображение компьютера Commodore 64" width="600" height="380" />
 )

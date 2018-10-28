@@ -1,21 +1,23 @@
+import Link from "next/link"
 import Layout from "../components/Layout"
-const title = "Saboteur 2 - все секреты и тайны, коды, бессмертие, перфокарты, ракета, тайная комната, телепорт, таймер, secrets"
-const footer = "Saboteur 2 и его тайны. Секреты которых вы не знали."
+const meta_descr = "Секреты Saboteur 2. Описаны все секреты, показаны все тайны, не упущено абсолютно ничего." 
+const title = "Saboteur 2 - все секреты и тайны, коды, бессмертие, перфокарты, ракета, тайная комната, телепорт, таймер, secrets" 
+const footer_note = "Saboteur 2 и его тайны. Секреты которых вы не знали." 
 
 export default () => (
-    <Layout {...{footer, title}} id="article-secrets">
+    <Layout {...{footer_note, title, meta_descr}} id="article-secrets">
         <h1>Секреты</h1>
 
         <ul className="flex-container">
-            <li><a href="saboteur2_sec_codes.html">КОДЫ К УРОВНЯМ</a></li>
-            <li><a href="saboteur2_sec_room.html">ТАЙНАЯ КОМНАТА - БЕССМЕРТИЕ</a></li>
-            <li><a href="saboteur2_sec_teleport.html">ТЕЛЕПОРТ</a></li>
-            <li><a href="saboteur2_sec_infinit_perf.html">ЯЩИК С БЕСКОНЕЧНЫМИ ПЕРФОКАРТАМИ</a></li>
-            <li><a href="saboteur2_sec_hidden_perf.html">СКРЫТАЯ ПЕРФОКАРТА</a></li>
-             {/* <li><a href="saboteur2_sec_migrate_perf.html">МИГРИРУЮЩАЯ ПЕРФОКАРТА</a></li>  */}
-            <li><a href="saboteur2_sec_neisp_perf.html">НЕИСПОЛЬЗУЕМЫЕ ПЕРФОКАРТЫ</a></li>
-            <li><a href="saboteur2_sec_rocket.html">ОТЛЕТ РАКЕТЫ</a></li>
-             {/* <li><a href="saboteur2_sec_timer.html">ОСТАНОВКА ТАЙМЕРА</a></li>  */}
+            <li><Link href="saboteur2_sec_codes"><a>КОДЫ К УРОВНЯМ</a></Link></li>
+            <li><Link href="saboteur2_sec_room"><a>ТАЙНАЯ КОМНАТА - БЕССМЕРТИЕ</a></Link></li>
+            <li><Link href="saboteur2_sec_teleport"><a>ТЕЛЕПОРТ</a></Link></li>
+            <li><Link href="saboteur2_sec_infinit_perf"><a>ЯЩИК С БЕСКОНЕЧНЫМИ ПЕРФОКАРТАМИ</a></Link></li>
+            <li><Link href="saboteur2_sec_hidden_perf"><a>СКРЫТАЯ ПЕРФОКАРТА</a></Link></li>
+            {/*<li><Link href="saboteur2_sec_migrate_perf"><a>МИГРИРУЮЩАЯ ПЕРФОКАРТА</a></Link></li>*/}
+            <li><Link href="saboteur2_sec_neisp_perf"><a>НЕИСПОЛЬЗУЕМЫЕ ПЕРФОКАРТЫ</a></Link></li>
+            <li><Link href="saboteur2_sec_rocket"><a>ОТЛЕТ РАКЕТЫ</a></Link></li>
+            {/*<li><Link href="saboteur2_sec_timer"><a>ОСТАНОВКА ТАЙМЕРА</a></Link></li>*/}
         </ul>
 
         <p>
@@ -23,7 +25,7 @@ export default () => (
         </p>
 
         <p>
-            <a href="saboteur2_contacts.html">КОНТАКТЫ</a>
+            <Link href="saboteur2_contacts"><a>КОНТАКТЫ</a></Link>
         </p>
     </Layout>
 )
