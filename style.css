@@ -79,42 +79,6 @@ p {
     margin-bottom: 2em;
 }
 
-/***** subpages ******/
-body.subpage {
-    display: block;
-    text-align: left;
-    overflow: hidden;
-}
-body.subpage audio {
-    display: block;
-    margin: 0 auto;
-}
-body.subpage img {
-    display: block;
-    margin: 0 auto;
-}
-body.subpage img.left {
-    float: left;
-    max-width: 50%;
-    margin-right: 1em;
-}
-div.player {
-    height: 54px;
-    overflow: visible;
-    margin-bottom: 0.5em;
-}
-body.subpage p.center {
-    text-align: center;
-}
-p.update-warning {
-    padding: 10px;
-    margin: 0;
-    background: rgb(38, 59, 59);
-}
-p.update-warning a {
-    color: chocolate;
-}
-
 /* iPhone 6-8 Plus */
 @media (max-width: 414px) {
     /****** navigation ****** */
