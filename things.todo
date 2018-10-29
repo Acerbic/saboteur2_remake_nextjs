@@ -1,3 +1,7 @@
 ✔ Solve reset.css mystery - how to order <link> in <head> @done (10/13/2018, 4:26:31 AM)
-☐ Fix <img> and <audio> - path to /static
-☐ fix links in articles - use <Link> and no ".html"
+✔ Fix <img> and <audio> - path to /static @done (10/30/2018, 12:48:31 AM)
+✔ fix links in articles - use <Link> and no ".html" @done (10/30/2018, 12:48:37 AM)
+
+☐ Write README
+☐ Make MAP widget
+☐ nicer menu for mobile (progressive?)
