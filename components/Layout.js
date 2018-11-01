@@ -19,7 +19,7 @@ const Layout = (props) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
                 <meta name="description" content="{{ meta_descr }}" />
-                <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+                <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" />
                 <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=cyrillic" rel="stylesheet" /> 
             </Head>
             <Header page={props.page_menu_item} />
@@ -27,10 +27,6 @@ const Layout = (props) => {
                 {props.children}
             </article>
             <Footer>{props.footer_note}</Footer>
-            {/* {
-                (props.footer_note && props.footer_note.length) ? 
-                    : ''
-            } */}
             <Disclaimer />
         </>
     )
