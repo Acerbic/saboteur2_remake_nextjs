@@ -2,6 +2,6 @@
 ✔ Fix <img> and <audio> - path to /static @done (10/30/2018, 12:48:31 AM)
 ✔ fix links in articles - use <Link> and no ".html" @done (10/30/2018, 12:48:37 AM)
 
-☐ Write README
+✔ Write README @done (10/31/2018, 10:23:57 PM)
 ☐ Make MAP widget
 ☐ nicer menu for mobile (progressive?)
