@@ -4,4 +4,5 @@
 
 ✔ Write README @done (10/31/2018, 10:23:57 PM)
 ☐ Make MAP widget
+    ✘ dynamically load the widget, instead of ol modules? @cancelled (11/1/2018, 8:27:27 PM)
 ☐ nicer menu for mobile (progressive?)

@@ -9,16 +9,8 @@ class ImageMap extends React.Component {
     }
 
     componentDidMount() {
-        const olMap = import('ol/Map');
-        const olView = import('ol/View');
-        const ImageLayer = import('ol/layer/Image');
-        const ImageStatic = import('ol/source/ImageStatic');
-
-        Promise.all([olMap, olView, ImageLayer, ImageStatic])
-            .then( (modules) => {
-
-                const [olMap, olView, ImageLayer, ImageStatic] = modules.map(m => m.default);
-
+        import('./olMods')
+            .then( ({olMap, olView, ImageLayer, ImageStatic}) => {
                 const map = new olMap({
                     target: 'map',
                     layers: [
@@ -30,9 +22,13 @@ class ImageMap extends React.Component {
                         })
                     ],
                     view: new olView({
-                        center: [4000, 2000],
+                        // constraints
+                        extent: [0, 0, 8192, 4608],
                         minResolution: 1,
                         maxResolution: 16,
+                        enableRotation: false,
+                        // initial position and zoom
+                        center: [4000, 2000],
                         resolution: 1
                     })
                 });
