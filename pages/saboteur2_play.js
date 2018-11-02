@@ -21,15 +21,15 @@ export default () => (
         </p>
 
         <p>
-            Файлы игры бывают в разных форматах, и, к сожалению, не все эмуляторы открывают каждый формат.
-            <a href="http://www.planetemu.net/rom/sinclair-zx-spectrum-z80/saboteur-ii-avenging-angel-1987-durell-15">Этот файл
-            </a> можно открыть в браузерном эмуляторе (для скачивания нажмите на кнопку &laquo;Télécharger&raquo;). А для запуска 
-            <a href="https://romsmania.cc/roms/zx-spectrum/saboteur-ii-avenging-angel-1987-durell-software-268005">этого</a> 
-            потребуется скачать эмулятор по ссылке выше.
+            Файлы игры бывают в разных форматах, и, к сожалению, не все эмуляторы открывают 
+            каждый формат. <a href="http://www.planetemu.net/rom/sinclair-zx-spectrum-z80/saboteur-ii-avenging-angel-1987-durell-15">Этот файл
+            </a> можно открыть в браузерном эмуляторе (для скачивания нажмите на кнопку &laquo;Télécharger&raquo;). 
+            А для запуска <a href="https://romsmania.cc/roms/zx-spectrum/saboteur-ii-avenging-angel-1987-durell-software-268005">этого</a> потребуется 
+            скачать эмулятор по ссылке выше.
         </p>
 
         <style jsx>{`
-            #article-play a {
+            a {
                 font-size: 1em;
                 text-decoration: underline;
                 font-style: italic;
