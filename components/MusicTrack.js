@@ -1,10 +1,6 @@
 import React from 'react';
 
 class MusicTrack extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidUpdate() {
         this.refs.audio.load();
     }

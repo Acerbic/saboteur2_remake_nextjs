@@ -16,6 +16,7 @@ class PageMusic extends React.Component {
         // Event delegation (switch track from <A> click)
         document.getElementById("article-music").addEventListener('click', e => {
             if (e.target.tagName == "A" && e.target.dataset && e.target.dataset.track) {
+                e.preventDefault();
                 this.setState({ track: e.target.dataset.track });
             }
         })
@@ -46,21 +47,26 @@ class PageMusic extends React.Component {
 
                 <h3>Оригинальная музыка из релизов</h3>
                 <ul className="flex-container">
-                    <li><a className="track-switch" data-track="sab2_zx48k_sp">Spectrum 48k</a></li>
-                    <li><a className="track-switch" data-track="sab2_zx128k_ay">Spectrum 128k</a></li>
-                    <li><a className="track-switch" data-track="sab2_amstrad_cpc">Amstrad CPC</a></li>
-                    <li><a className="track-switch" data-track="sab2_c64">Commodore C64</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx48k_sp" data-track="sab2_zx48k_sp">Spectrum 48k</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx128k_ay" data-track="sab2_zx128k_ay">Spectrum 128k</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_amstrad_cpc" data-track="sab2_amstrad_cpc">Amstrad CPC</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_c64" data-track="sab2_c64">Commodore C64</a></li>
                 </ul>
                 <h3>Обработки и ремиксы</h3>
                 <ul className="flex-container">
-                    <li><a className="track-switch" data-track="sab2_hubbard">Rob Hubbard</a></li>
-                    <li><a className="track-switch" data-track="sab2_marcel_donne">Marcel Donne</a></li>
-                    <li><a className="track-switch" data-track="sab2_marcel_donne_revisited">Marcel Donne - Revisited</a></li>
-                    <li><a className="track-switch" data-track="sab2_v2009">Saboteur 2 v2009</a></li>
-                    <li><a className="track-switch" data-track="sab2_endika">Endika Fernandez - techno-mix</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_hubbard" data-track="sab2_hubbard">Rob Hubbard</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_marcel_donne" data-track="sab2_marcel_donne">Marcel Donne</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_marcel_donne_revisited" data-track="sab2_marcel_donne_revisited">Marcel Donne - Revisited</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_v2009" data-track="sab2_v2009">Saboteur 2 v2009</a></li>
+                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_endika" data-track="sab2_endika">Endika Fernandez - techno-mix</a></li>
                 </ul>
 
-                <MusicTrackSwitcher track={this.state.track}></MusicTrackSwitcher>
+                <MusicTrackSwitcher track={this.state.track} jsShow></MusicTrackSwitcher>
+                <noscript>
+                    <iframe name="mus_subpage" src="saboteur2_mus_subpage?track=sab2_amstrad_cpc" frameborder="0" width="780px" height="550px"
+                        title="Страница с плеером музыки (переключается между треками ссылками выше)"
+                    ></iframe>
+                </noscript>
 
                 <style jsx>{`
                     article#article-music ul.flex-container {

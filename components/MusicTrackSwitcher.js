@@ -1,11 +1,26 @@
+import React from 'react'
 import data from './MusicList'
 import MusicTrack from './MusicTrack'
 
-export default ({ track }) => {
+class MusicTrackSwitcher extends React.Component {
 
-    const track_data = data[track];
+    componentDidMount() {
+        if (this.props.jsShow) {
+            this.refs.track.style.display = 'unset';
+        }
+    }
+
+    render () {
+        const { track, jsShow } = this.props;
+        const track_data = data[track];
     
-    return (
-        <MusicTrack {...track_data}></MusicTrack>
-    );
+        return (
+            <div style={ {display: jsShow? 'none' : undefined} } ref="track">
+                <MusicTrack {...track_data}></MusicTrack>
+            </div>
+        );
+    }
 }
+
+
+export default MusicTrackSwitcher
