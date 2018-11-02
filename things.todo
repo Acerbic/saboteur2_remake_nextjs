@@ -3,6 +3,9 @@
 ✔ fix links in articles - use <Link> and no ".html" @done (10/30/2018, 12:48:37 AM)
 
 ✔ Write README @done (10/31/2018, 10:23:57 PM)
-☐ Make MAP widget
+✔ Make MAP widget @done (11/2/2018, 10:27:14 PM)
     ✘ dynamically load the widget, instead of ol modules? @cancelled (11/1/2018, 8:27:27 PM)
+    ☐ Cut image into tiles and use TileImage source instead
 ☐ nicer menu for mobile (progressive?)
+☐ Provide noscript for music page
+☐ make music page layout (links <-> view) better
