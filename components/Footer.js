@@ -1,3 +1,7 @@
+/**
+ * Renders footer part of page layout - bottom of the page link
+ */
+
 import Link from 'next/link'
 
 export default (props) => (

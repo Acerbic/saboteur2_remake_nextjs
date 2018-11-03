@@ -1,3 +1,14 @@
+/**
+ * This Component renders a map widget similar to Google Maps.
+ * It is using OpenLayers library (http://openlayers.org/).
+ * 
+ * One important detail is that the widget is using dynamic import feature of
+ * NextJS - importing module 'olMods' strictly from the client browser, not in
+ * SSR. This is due to organization of OpenLayers - it uses features detection 
+ * during module linking, as far as I understand, and because of that requires
+ * presence of 'window' object, which is not existing during SSR.
+ */
+
 import React from 'react'
 import 'ol/ol.css';
 
@@ -5,10 +16,17 @@ class ImageMap extends React.Component {
     constructor(props) {
         super(props);
 
+        // this state has no use, but I am leaving it for keeping a reference
+        // to map object, when it will be created, for debugging purposes
         this.state = { map: null };
     }
 
+    /**
+     * 'componentDidMount' executes only in client, unlike 'render', which
+     * can be executed in both client and SSR
+     */
     componentDidMount() {
+        // dynamic import
         import('./olMods')
             .then(({ olMap, olView, ImageLayer, ImageStatic, defaultControls, FullScreen }) => {
                 const map = new olMap({
@@ -35,6 +53,7 @@ class ImageMap extends React.Component {
                         resolution: 1
                     })
                 });
+                // saving map object for future inspection with React Dev Tools
                 this.setState({ map });
             })
             .catch(e => console.log(e))
@@ -64,6 +83,9 @@ class ImageMap extends React.Component {
                         height: 100%;
                     }
                 `}</style>
+                {/* Have to put this style into global, since DOM produced
+                    by OpenLayers doesn't receive style-jsx scoped class name
+                 */}
                 <style jsx global>{`
                     button.ol-full-screen-false {
                         font-weight: normal;

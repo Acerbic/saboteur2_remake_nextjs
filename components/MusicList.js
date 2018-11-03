@@ -1,3 +1,10 @@
+/**
+ * This module is just a data provider about musical tracks available
+ * on "Music" page of the site (/saboteur2_music). It is a set of 
+ * objects {audiofile, image:{src, alt, width, height}, text}, keyed by
+ * a string id (audiofile name is used for id purposes)
+ */
+
 export default {
 
     "sab2_amstrad_cpc": {

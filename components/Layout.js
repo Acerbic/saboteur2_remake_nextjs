@@ -1,7 +1,11 @@
+/**
+ * Renders main layout for the pages, populates <head> tag
+ */
+
+import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import Disclaimer from './Disclaimer'
-import Head from 'next/head'
 import 'reset-css'
 import '../style.css'
 

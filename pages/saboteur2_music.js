@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from "../components/Layout"
-import MusicTrackSwitcher from "../components/MusicTrackSwitcher";
+import MusicTrackSwitcher from "../components/MusicTrackSwitcher"
 
 const meta_descr = "Здесь можно послушать всю музыку из игры Saboteur 2. Доступны все версии и релизы, начиная от оригинальной композиции и заканчивая современными обработками. ZX Spectrum, IBM PC, Commodore C64 и Amstrad CPC."
 const title = "Saboteur 2 - вся музыка и обработки из игры, Rob Hubbard, Marcel Donne, Endika, ZX Spectrum, Amstard CPC, Commodore C64, IBM PC, послушать, скачать, звук, ремикс, ремейк, remix"
@@ -45,6 +45,9 @@ class PageMusic extends React.Component {
                     </p>
                 </section>
 
+                {/* In the following links, target and href attributes are only used when Javascript is disabled in browser,
+                    data-track is used for switching with React when JS is enabled.
+                 */}
                 <h3>Оригинальная музыка из релизов</h3>
                 <ul className="flex-container">
                     <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx48k_sp" data-track="sab2_zx48k_sp">Spectrum 48k</a></li>
@@ -61,6 +64,8 @@ class PageMusic extends React.Component {
                     <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_endika" data-track="sab2_endika">Endika Fernandez - techno-mix</a></li>
                 </ul>
 
+                {/* This is a bit complicated way to have this page's functionality both with JS enabled and disabled. 
+                    See MusicTrackSwitcher component file for detailed description */}
                 <MusicTrackSwitcher track={this.state.track} jsShow></MusicTrackSwitcher>
                 <noscript>
                     <iframe name="mus_subpage" src="saboteur2_mus_subpage?track=sab2_amstrad_cpc" frameborder="0" width="780px" height="550px"

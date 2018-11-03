@@ -1,7 +1,14 @@
+/**
+ * Renders header part of the layout - logo + main menu
+ */
+
 import Link from 'next/link'
 import MenuLink from './MenuLink'
 import { withRouter } from 'next/router'
 
+/**
+ * List main menu items - titles and urls
+ */
 const menu_items = [
     {
         "name": "Главная",

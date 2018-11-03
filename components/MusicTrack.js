@@ -1,6 +1,16 @@
+/**
+ * Renders a page fragment, describing a Music Track. Features an image,
+ * optional text description and an audio player to play the music in browser.
+ */
+
 import React from 'react';
 
 class MusicTrack extends React.Component {
+    /**
+     * After tracks switched (and props updated), causing different "src" in
+     * <audio>, the player object still retains the previous sound file in use.
+     * This forces to reevaluate "src" attribute and load teh new file
+     */
     componentDidUpdate() {
         this.refs.audio.load();
     }

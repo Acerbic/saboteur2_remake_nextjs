@@ -1,9 +1,9 @@
-import Link from 'next/link'
-
 /**
  * Menu link element for the main navigation. Tracks current page
  * and highlights the "current" link accordingly
  */
+import Link from 'next/link'
+
 const MenuLink = ({ href, active, children }) => (
     <React.Fragment>
         <Link href={href}>
