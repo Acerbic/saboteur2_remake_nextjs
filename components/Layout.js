@@ -26,7 +26,7 @@ const Layout = (props) => {
                 <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png" />
                 <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=cyrillic" rel="stylesheet" /> 
             </Head>
-            <Header page={props.page_menu_item} />
+            <Header page={props.page_menu_item}/>
             <article {...article_attrs}>
                 {props.children}
             </article>

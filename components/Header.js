@@ -5,6 +5,7 @@
 import Link from 'next/link'
 import MenuLink from './MenuLink'
 import { withRouter } from 'next/router'
+import { bubble as Menu } from 'react-burger-menu'
 
 /**
  * List main menu items - titles and urls
@@ -98,7 +99,7 @@ const Header = ({ page, router }) => {
                     </a>
                 </Link>
             </div>
-            <nav>
+            <nav id="screen-nav">
                 <ul id="navigation">
                     {
                         menu_items.map(item => (
@@ -111,25 +112,100 @@ const Header = ({ page, router }) => {
                     }
                 </ul>
             </nav>
-            <hr />
+            <div id="burger-nav">
+                <Menu right={ true } customCrossIcon={false} bodyClassName={"bm-open"}>
+                    {
+                        menu_items.map(item => (
+                            <div className="menu-item" key={item.src}>
+                                <MenuLink
+                                    active={item.src === active_path}
+                                    href={item.src}>
 
+                                    {item.name}
+                                </MenuLink>
+                            </div>
+                        ))
+                    }
+                </Menu>
+            </div>
+            <hr />
             <style jsx>{`
                 header {
                     overflow: hidden;
                 }
+            `}</style>
+            <style jsx global>{`
+                #burger-nav {
+                    margin-top: 5%;
+                    width: 10%;
+                    float: right;
+                    position: relative;
+                    padding-bottom: 8.6%;
+                }
+                .bm-burger-button {
+                    position: absolute;
+                    width: 95%;
+                    margin-right: 5%;
+                    height: 100%;
+                }
+                .bm-open .bm-burger-button {
+                    visibility: hidden;
+                }
+                .bm-menu-wrap {
+                    top: 0;
+                    overflow: hidden;
+                }
+                .bm-burger-bars {
+                    background: beige;
+                }
+                .bm-overlay {
+                    left: 0; top: 0; bottom: 0; right: 0;
+                }
+                .bm-menu {
+                    padding: 2em;
+                    overflow: hidden;
+                }
+                .bm-morph-shape {
+                    fill: rgba(54, 54, 54, 0.9);;
+                }
+                .bm-item-list {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .bm-item:first-child {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 2em;
+                }
+                .bm-item:nth-child(2n+2) {
+                    text-align: right;
+                    padding-right: 0.5em;
+                }
+                .bm-item:nth-child(2n+3) {
+                    text-align: left;
+                    padding-left: 0.5em;
+                }
 
-                div#header-logo {
+                .bm-item {
+                    font-size: 1.25em;
+                    display: block;
+                    width: 50%;
+                    box-sizing: border-box;
+                }
+
+                #header-logo {
                     padding-bottom: 0.833em;
                     position: relative;
                     left: 50%;
                 }
-                div#header-logo a {
+                #header-logo a {
                     /* center the overflow, since the 100% is in reference to actual
                     width - i.e. after clamping by min-width and max-width */
                     margin-left: -100%;
                 }
 
-                div#header-logo img {
+                #header-logo img {
                     /* this results in parent's width, but clamped between 400 and 640 */
                     width: 100%;
                     /* display:block; */
@@ -145,6 +221,30 @@ const Header = ({ page, router }) => {
 
                 ul#navigation li {
                     padding: 0 1em;
+                }
+
+                header hr {
+                    /* clear in case of burger-menu */
+                    clear: both; /* TODO: better clear */
+                }
+
+                /* Menu selector */
+                #burger-nav { display: none; }
+                @media (max-width: 1024px) {
+                    #screen-nav { display: none; }
+                    #burger-nav { display: block; }
+                    #header-logo {
+                        float: left;
+                        position: static;
+                        width: 87%;
+                    }
+                    #header-logo a {
+                        margin: 0;
+                    }
+                    #header-logo img {
+                        min-width: unset;
+                        max-width: unset;
+                    }
                 }
             `}</style>
         </header>

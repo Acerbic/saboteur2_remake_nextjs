@@ -82,11 +82,11 @@ p {
 /* iPhone 6-8 Plus */
 @media (max-width: 414px) {
     /****** navigation ****** */
-    header a#header-logo img { padding: 0; }
+    /* header a#header-logo img { padding: 0; } */
     /* pronounce it */
-    nav ul li:first-child { min-width: 100%; margin: 0; }
+    /* nav ul li:first-child { min-width: 100%; margin: 0; } */
     /* spacing */
-    nav ul li { padding: 0; margin: 0.25em 0; min-width: 25%; }
+    /* nav ul li { padding: 0; margin: 0.25em 0; min-width: 25%; } */
 
     /*** page: weapons ****/
     div#weapons figure { min-width: 50%; }
@@ -122,12 +122,12 @@ p {
     /* scaling for hand held */
     body { font-size: 0.9em; }
     /* banner */
-    header a#header-logo img {
+    /* header a#header-logo img {
         padding: 0;
         min-width: unset;
         max-height: 5em;
         width: auto;
-    }
+    } */
 }
 
 /* iPhone 5 */
@@ -135,11 +135,11 @@ p {
 
     /****** navigation ****** */
     /* banner */
-    header a#header-logo img { /*padding: 0;*/ min-width: unset; }
+    /* header a#header-logo img { min-width: unset; } */
     /* pronounce it */
-    nav ul li:first-child { min-width: 100%; margin: 0; }
+    /* nav ul li:first-child { min-width: 100%; margin: 0; } */
     /* spacing */
-    nav ul li { padding: 0; margin: 0.25em 0; min-width: 25%; }
+    /* nav ul li { padding: 0; margin: 0.25em 0; min-width: 25%; } */
 
     /*** page: weapons ****/
     div#weapons figure { min-width: 50%; }
