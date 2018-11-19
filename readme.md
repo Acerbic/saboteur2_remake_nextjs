@@ -24,6 +24,9 @@ on the server (server side rendering) and partially in the client browser.
 
 ## Commands ##
 
+This project uses [Yarn][yarn], so if you don't have it, you need to install it
+first.
+
 Install
 
 ```bash
@@ -35,16 +38,27 @@ server instance process, with automatic recompile when files
 change and hot reload.
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Production build and server
 
 ```bash
-npm run build
-npm run start
+yarn build
+yarn start
+```
+
+Webpack Bundle Analyzer - get stats on data load to be server to webpage.
+Use one of the following commands (the first one creates both of  the  reports,
+for browser and a server)
+
+```bash
+yarn analyze
+yarn analyze:server
+yarn analyze:browser
 ```
 
 [orig]: http://www.saboteur2.ru
 [rm1]: https://bitbucket.org/GlebVarenov/saboteur2_remake#readme
 [nextjs]: https://nextjs.org/
+[yarn]: https://yarnpkg.com/en/
