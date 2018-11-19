@@ -9,7 +9,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "cross-env BUNDLE_ANALYZE=both yarn build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server yarn build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser yarn build"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -20,5 +23,9 @@
     "react-burger-menu": "^2.5.4",
     "react-dom": "^16.5.2",
     "reset-css": "^4.0.1"
+  },
+  "devDependencies": {
+    "@zeit/next-bundle-analyzer": "^0.1.2",
+    "cross-env": "^5.2.0"
   }
 }
