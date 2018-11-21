@@ -54,6 +54,11 @@ export default ({active_path}) =>
                 background: rgb(182, 70, 18);
                 border-width: 0.4vw 0;
             }
+            @media (orientation: landscape) {
+                .bm-burger-button > span > span:nth-child(2) {
+                    border-width: 0.4vh 0;
+                }
+            }
             .bm-overlay {
                 left: 0; top: 0; bottom: 0; right: 0;
             }
@@ -82,7 +87,6 @@ export default ({active_path}) =>
                 text-align: left;
                 padding-left: 0.5em;
             }
-
             .bm-item {
                 font-size: 1.25em;
                 display: block;

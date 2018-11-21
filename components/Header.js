@@ -28,20 +28,24 @@ const Header = ({ page, router }) => {
             <nav id="screen-nav">
                 <MenuBar active_path={ active_path }/>
             </nav>
-            <div id="burger-nav">
-                <MenuBurger active_path={ active_path }/>
+            <div id="burger-nav-sizing">
+                <div id="burger-nav">
+                    <MenuBurger active_path={ active_path }/>
+                </div>
             </div>
             <hr />
             <style jsx global>{`
                 header {
                     overflow: hidden;
+                    position: relative;
                 }
                 #burger-nav {
-                    margin-top: 5%;
+                    margin-top: 4.9%;
                     width: 10%;
                     float: right;
                     position: relative;
-                    padding-bottom: 8.6%;
+                    padding-bottom: 8.7%;
+                    margin-right: 1%;
                 }
 
                 #header-logo {
@@ -53,6 +57,8 @@ const Header = ({ page, router }) => {
                     /* center the overflow, since the 100% is in reference to actual
                     width - i.e. after clamping by min-width and max-width */
                     margin-left: -100%;
+                    height: inherit;
+                    /*display: block;*/
                 }
 
                 #header-logo img {
@@ -64,20 +70,20 @@ const Header = ({ page, router }) => {
                 }
 
                 header hr {
-                    /* TODO: replace floats with flexbox */
                     /* clear in case of burger-menu */
                     clear: both;
                 }
 
                 /* Menu selector */
-                #burger-nav { display: none; }
-                @media (max-width: 1024px) {
+                #burger-nav-sizing { display: none; }
+                @media (max-width: 800px) {
                     #screen-nav { display: none; }
-                    #burger-nav { display: block; }
+                    #burger-nav-sizing { display: block; }
                     #header-logo {
                         float: left;
                         position: static;
                         width: 87%;
+                        padding: 0;
                     }
                     #header-logo a {
                         margin: 0;
@@ -87,6 +93,25 @@ const Header = ({ page, router }) => {
                            button in size with image  */
                         min-width: unset;
                         max-width: unset;
+                    }
+                }
+
+                @media (max-width: 800px) and (orientation: landscape) {
+                    /* fix height */
+                    #header-logo {
+                        height: 20vh;
+                    }
+                    /* switch to scaling from height */
+                    #header-logo img {
+                        height: inherit;
+                        width: auto;
+                    }
+                    /* this is a bit messy, especially positioning part */
+                    #burger-nav-sizing {
+                        width: 120vh;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
                     }
                 }
             `}</style>
