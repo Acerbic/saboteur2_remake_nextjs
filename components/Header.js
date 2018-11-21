@@ -156,7 +156,22 @@ const Header = ({ page, router }) => {
                     overflow: hidden;
                 }
                 .bm-burger-bars {
-                    background: beige;
+                    background: #FFB90F;
+                }
+                .bm-burger-button > span > span:first-of-type {
+                    border-top-right-radius: 50%;
+                    border-top-left-radius: 50%;
+                }
+                .bm-burger-button > span > span:last-of-type {
+                    border-bottom-right-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                }
+                .bm-burger-button > span > span:nth-child(2) {
+                    border-top: solid green;
+                    border-bottom: solid yellow;
+                    box-sizing: border-box;
+                    background: rgb(182, 70, 18);
+                    border-width: 0.4vw 0;
                 }
                 .bm-overlay {
                     left: 0; top: 0; bottom: 0; right: 0;
@@ -242,6 +257,8 @@ const Header = ({ page, router }) => {
                         margin: 0;
                     }
                     #header-logo img {
+                        /* Unsetting scale limits to keep burger menu
+                           button in size with image  */
                         min-width: unset;
                         max-width: unset;
                     }

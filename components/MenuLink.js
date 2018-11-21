@@ -12,7 +12,7 @@ const MenuLink = ({ href, active, children }) => (
         <style jsx>{`
             a {
                 color: #FFB90F;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: Impact, 'Oswald', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 text-decoration: none;
                 font-size: 1em;
             }

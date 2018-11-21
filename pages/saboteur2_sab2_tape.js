@@ -41,7 +41,7 @@ export default () => (
         </figure>
 
         <p>
-            <Link href="saboteur2_secret"><a>НАЗАД</a></Link>
+            <Link href="/"><a>НАЗАД</a></Link>
         </p>
     </Layout>
 )

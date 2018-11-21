@@ -7,6 +7,7 @@
     ✘ dynamically load the widget, instead of ol modules? @cancelled (11/1/2018, 8:27:27 PM)
     ☐ Cut image into tiles and use TileImage source instead
 ✔ nicer menu for mobile (progressive?) @done (11/14/2018, 1:43:53 AM)
+    ☐ single set of elements for both burger menu and flat menu
 ✔ Provide noscript for music page @done (11/3/2018, 1:02:18 AM)
     ☐ fix styles for music nojs page
         ☐ pics
