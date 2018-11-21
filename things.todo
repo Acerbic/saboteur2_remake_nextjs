@@ -13,7 +13,7 @@
     ☐ when nojs disable burgermenu (doesn't work without js)
     ☐ in burger menu put the "close" button into the corner (in case overlay is
     not visible on very small devices)
-    ☐ BUG! layout problem on near-square clients where width is just slightly bigger than height
+    ✔ BUG! layout problem on near-square clients where width is just slightly bigger than height @done (11/21/2018, 7:45:55 AM)
 ✔ Provide noscript for music page @done (11/3/2018, 1:02:18 AM)
     ☐ fix styles for music nojs page
         ☐ pics

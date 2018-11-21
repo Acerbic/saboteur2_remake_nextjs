@@ -40,7 +40,7 @@ const Header = ({ page, router }) => {
                     position: relative;
                 }
                 #burger-nav {
-                    margin-top: 4.9%;
+                    margin-top: 4.7%;
                     width: 10%;
                     float: right;
                     position: relative;
@@ -92,11 +92,11 @@ const Header = ({ page, router }) => {
                         /* Unsetting scale limits to keep burger menu
                            button in size with image  */
                         min-width: unset;
-                        max-width: unset;
+                        /*max-width: unset;*/
                     }
                 }
 
-                @media (max-width: 800px) and (orientation: landscape) {
+                @media (max-width: 800px) and (max-height: 80vw) and (orientation: landscape) {
                     /* fix height */
                     #header-logo {
                         height: 20vh;

@@ -52,11 +52,19 @@ export default ({active_path}) =>
                 border-bottom: solid yellow;
                 box-sizing: border-box;
                 background: rgb(182, 70, 18);
-                border-width: 0.4vw 0;
+                /* kind of hackish, but since border-width can't 
+                   use (container width) % values, the only option is to
+                   use viewport side as reference size. But
+                   layout is dependent on orientation, sometimes
+                   size is based on vh, and sometimes on vw 
+                   (and use different formulas as well). So this is
+                   an approximation to include both and hope it looks
+                   alright for the most uses*/
+                border-width: calc(0.2vh + 0.2vw) 0;
             }
             @media (orientation: landscape) {
                 .bm-burger-button > span > span:nth-child(2) {
-                    border-width: 0.4vh 0;
+                    /*border-width: 0.4vh 0;*/
                 }
             }
             .bm-overlay {
