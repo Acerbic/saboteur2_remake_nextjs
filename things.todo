@@ -11,7 +11,9 @@
     ☐ replace floats with flexbox in burger menu placement
     ☐ in bar menu add a bit of vertical separation between rows
     ☐ when nojs disable burgermenu (doesn't work without js)
-    ☐ in burger menu put the "close" button into the corner (in case overlay is not visible on very small devices)
+    ☐ in burger menu put the "close" button into the corner (in case overlay is
+    not visible on very small devices)
+    ☐ BUG! layout problem on near-square clients where width is just slightly bigger than height
 ✔ Provide noscript for music page @done (11/3/2018, 1:02:18 AM)
     ☐ fix styles for music nojs page
         ☐ pics
