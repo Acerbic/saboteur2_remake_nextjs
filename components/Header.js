@@ -75,18 +75,18 @@ const Header = ({ page, router }) => {
                 /* Menu selector */
                 #burger-nav-sizing { display: none; }
                 @media (max-width: 900px) {
-                    #screen-nav { display: none; }
-                    #burger-nav-sizing { display: block; }
-                    #header-logo {
+                    html.hasJs #screen-nav { display: none; }
+                    html.hasJs #burger-nav-sizing { display: block; }
+                    html.hasJs #header-logo {
                         float: left;
                         position: static;
                         width: 87%;
                         padding: 0;
                     }
-                    #header-logo a {
+                    html.hasJs #header-logo a {
                         margin: 0;
                     }
-                    #header-logo img {
+                    html.hasJs #header-logo img {
                         /* Unsetting scale limits to keep burger menu
                            button in size with image  */
                         min-width: unset;
@@ -96,16 +96,16 @@ const Header = ({ page, router }) => {
 
                 @media (max-width: 900px) and (max-height: 80vw) and (orientation: landscape) {
                     /* fix height */
-                    #header-logo {
+                    html.hasJs #header-logo {
                         height: 20vh;
                     }
                     /* switch to scaling from height */
-                    #header-logo img {
+                    html.hasJs #header-logo img {
                         height: inherit;
                         width: auto;
                     }
                     /* this is a bit messy, especially positioning part */
-                    #burger-nav-sizing {
+                    html.hasJs #burger-nav-sizing {
                         width: 120vh;
                         position: absolute;
                         top: 0;
