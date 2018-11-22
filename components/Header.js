@@ -47,9 +47,7 @@ const Header = ({ page, router }) => {
                     padding-bottom: 8.7%;
                     margin-right: 1%;
                 }
-
                 #header-logo {
-                    padding-bottom: 0.833em;
                     position: relative;
                     left: 50%;
                 }
@@ -76,7 +74,7 @@ const Header = ({ page, router }) => {
 
                 /* Menu selector */
                 #burger-nav-sizing { display: none; }
-                @media (max-width: 800px) {
+                @media (max-width: 900px) {
                     #screen-nav { display: none; }
                     #burger-nav-sizing { display: block; }
                     #header-logo {
@@ -96,7 +94,7 @@ const Header = ({ page, router }) => {
                     }
                 }
 
-                @media (max-width: 800px) and (max-height: 80vw) and (orientation: landscape) {
+                @media (max-width: 900px) and (max-height: 80vw) and (orientation: landscape) {
                     /* fix height */
                     #header-logo {
                         height: 20vh;

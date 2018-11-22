@@ -9,7 +9,7 @@
 ✔ nicer menu for mobile (progressive?) @done (11/14/2018, 1:43:53 AM)
     ✘ single set of elements for both burger menu and flat menu @cancelled (11/21/2018, 6:39:11 AM)
     ☐ replace floats with flexbox in burger menu placement
-    ☐ in bar menu add a bit of vertical separation between rows
+    ✔ in bar menu add a bit of vertical separation between rows @done (11/22/2018, 3:09:03 PM)
     ☐ when nojs disable burgermenu (doesn't work without js)
     ☐ in burger menu put the "close" button into the corner (in case overlay is
     not visible on very small devices)

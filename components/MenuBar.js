@@ -24,10 +24,12 @@ export default ({active_path}) =>
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+                /* row-gap: 1em; */
             }
 
             ul#navigation li {
                 padding: 0 1em;
+                margin-top: 0.8em;
             }
         `}</style>
     </ul>
