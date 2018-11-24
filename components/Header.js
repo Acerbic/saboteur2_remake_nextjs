@@ -78,12 +78,12 @@ const Header = ({ page, router }) => {
                 }
 
                 /* Menu type selector (toggles between bar menu and burger menu) */
-                #burger-nav-sizing { display: none; }
+                #burger-nav { display: none; }
 
                 /* show burger menu when js enabled and the screen is narrow */
                 @media (max-width: 900px) {
                     html.hasJs #screen-nav { display: none; }
-                    html.hasJs #burger-nav-sizing { display: block; }
+                    html.hasJs #burger-nav { display: block; }
                     html.hasJs header {
                         display: flex;
                         flex-wrap: wrap;
