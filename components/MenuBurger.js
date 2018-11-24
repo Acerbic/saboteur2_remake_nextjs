@@ -9,12 +9,27 @@ import MenuItems from './MenuItems'
 import MenuLink from './MenuLink'
 import './MenuBurger.css' /* need actual css file for @media */
 
+const styles = {
+    bmCrossButton: {
+        height: '3em',
+        width: '3em'
+    },
+    bmCross: {
+        background: '#555',
+        height: '3em',
+        width: '0.3em',
+        right: '8px',
+        top: '-4px'
+    }
+}
+
 export default ({active_path}) =>
     <Menu 
         right
-        customCrossIcon={ false }
+        // customCrossIcon={ false }
         bodyClassName={ "bm-open" }
         width={ '' }
+        styles={ styles }
     >
         {
             MenuItems.map(item => (

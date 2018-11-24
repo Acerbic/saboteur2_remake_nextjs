@@ -7,6 +7,11 @@
     margin-right: 5%;
     height: 100%;
 }
+.bm-cross-button {
+    width: 3em;
+    height: 3em;
+}
+
 .bm-open .bm-burger-button {
     visibility: hidden;
 }
