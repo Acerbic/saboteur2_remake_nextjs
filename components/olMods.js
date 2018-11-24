@@ -1,7 +1,7 @@
 /**
  * Bunch of modules that should be linked on a client are grouped together
  * to have a single dynamic import() statement, instead of importing each 
- * separately. This helps reducing both number for requests and amount of 
+ * separately. This helps reducing both number of requests and amount of 
  * traffic - since some of the modules have common components down the import 
  * tree. (approx 25% save on weight and number of request 4 -> 1)
  */

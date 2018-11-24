@@ -2,13 +2,14 @@
  * Renders main layout for the pages, populates <head> tag
  */
 
+import 'reset-css'
+import '../style.css'
+
 import React from 'react'
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import Disclaimer from './Disclaimer'
-import 'reset-css'
-import '../style.css'
 
 class Layout extends React.Component {
 
