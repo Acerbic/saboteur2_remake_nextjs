@@ -1,0 +1,127 @@
+.bm-menu-wrap {
+    width: 300px;
+}
+.bm-burger-button {
+    position: absolute;
+    width: 95%;
+    margin-right: 5%;
+    height: 100%;
+}
+.bm-open .bm-burger-button {
+    visibility: hidden;
+}
+.bm-menu-wrap {
+    top: 0;
+    overflow: hidden;
+}
+.bm-burger-bars {
+    background: #FFB90F;
+}
+.bm-burger-button > span > span:first-of-type {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.bm-burger-button > span > span:last-of-type {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.bm-burger-button > span > span:nth-child(2) {
+    border-top: solid green;
+    border-bottom: solid yellow;
+    box-sizing: border-box;
+    background: rgb(182, 70, 18);
+    /* kind of hackish, but since border-width can't 
+        use (container width) % values, the only option is to
+        use viewport side as reference size. But
+        layout is dependent on orientation, sometimes
+        size is based on vh, and sometimes on vw 
+        (and use different formulas as well). So this is
+        an approximation to include both and hope it looks
+        alright for the most uses*/
+    border-width: calc(0.2vh + 0.2vw) 0;
+}
+.bm-overlay {
+    left: 0; top: 0; bottom: 0; right: 0;
+}
+.bm-menu {
+    padding: 2em;
+    overflow: hidden;
+}
+.bm-morph-shape {
+    fill: rgba(54, 54, 54, 0.9);;
+}
+.bm-item-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bm-item:first-child {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+.bm-item:nth-child(2n+2) {
+    text-align: right;
+    padding-right: 0.5em;
+}
+.bm-item:nth-child(2n+3) {
+    text-align: left;
+    padding-left: 0.5em;
+}
+.bm-item {
+    font-size: 1.25em;
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/***** various mobile adjustments ****/
+
+/* portrait narrow - one column */
+@media (min-height: 700px) {
+    .bm-item:nth-child(1n+2) {
+        width: 99%;
+        text-align: center;
+        padding: 0;
+    }
+    .bm-menu-wrap {
+        width: 250px;
+    }
+    .bm-menu {
+        padding: 1em 3em 1em 2em;
+    }
+}
+
+/* landscape wide - 3 columns */
+@media (max-height: 415px) and (min-width: 450px) {
+    .bm-item:nth-child(1n+2) {
+        width: 33%;
+        text-align: center;
+        padding: 0;
+    }
+    .bm-item:nth-child(3n+2) {
+        text-align: left;
+    }
+    .bm-item:nth-child(3n+4) {
+        text-align: right;
+    }
+    .bm-item:last-child {
+        text-align: center;
+    }
+    .bm-menu-wrap {
+        width: 400px;
+    }
+    .bm-menu {
+        padding: 1em 2em;
+    }
+}
+
+/* portrait mode on smaller devices */
+@media (max-width: 320px) {
+    .bm-menu-wrap {
+        width: 250px;
+    }
+    .bm-menu {
+        padding: 2em 1em 1em;
+    }
+}

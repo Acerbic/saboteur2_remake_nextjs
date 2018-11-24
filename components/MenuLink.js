@@ -19,6 +19,7 @@ const MenuLink = ({ href, active, children }) => (
 
             a.current {
                 color: #FF4500;
+                text-decoration: underline;
             }
         `}</style>
     </React.Fragment>

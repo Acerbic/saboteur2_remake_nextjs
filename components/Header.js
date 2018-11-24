@@ -90,7 +90,7 @@ const Header = ({ page, router }) => {
                         /* Unsetting scale limits to keep burger menu
                            button in size with image  */
                         min-width: unset;
-                        /*max-width: unset;*/
+                        max-width: unset;
                     }
                 }
 
