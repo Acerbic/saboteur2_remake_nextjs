@@ -70,7 +70,7 @@ export default () => (
 
         <div id="transports" className="flex-container">
             <figure>
-                <figcaption>Дельтоплан, на котором Саботёр подлетает к зданию:</figcaption>
+                <figcaption>Дельтаплан, на котором Саботёр подлетает к зданию:</figcaption>
                 <img src="static/images/saboteur_on_deltaplan.png" alt="" width="170" height="122"/>
             </figure>
     

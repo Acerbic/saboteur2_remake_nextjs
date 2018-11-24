@@ -8,7 +8,7 @@ export default () => (
         <h1>Фантазии</h1>
 
         <p>
-            Дельтоплан упал на край здания....и Саботёр найдет его там.
+            Дельтаплан упал на край здания....и Саботёр найдет его там.
         </p>
 
         <img src="static/images/fantasy1.png" className="bordered" alt="" width="397" height="198"/>
