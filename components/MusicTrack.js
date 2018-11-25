@@ -37,7 +37,7 @@ class MusicTrack extends React.Component {
                 <img src={image.src} className={ text ? "left" : "" } alt={image.alt} width={image.width} height={image.height} />
                 { text }
                 
-                <style jsx>{`
+                <style jsx global>{`
                     .subpage {
                         display: block;
                         text-align: left;
@@ -75,6 +75,24 @@ class MusicTrack extends React.Component {
                     }
                     p.update-warning a {
                         color: chocolate;
+                    }
+
+                    /* one column */
+                    @media (orientation: landscape) and (max-height: 415px) {
+                        .subpage audio {
+                            max-width: 50%;
+                        }
+                        .subpage img, .subpage img.left {
+                            float: none;
+                            max-width: unset;
+                            max-height: 200px;
+                            width: auto;
+                            max-width: 50%;
+                            margin: 0 auto;
+                        }
+                        .subpage {
+                            text-align: right;
+                        }
                     }
                 `}</style>
             </section>

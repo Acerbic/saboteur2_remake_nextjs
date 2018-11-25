@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from "../components/Layout"
+import MusicList from "../components/MusicList"
 import MusicTrackSwitcher from "../components/MusicTrackSwitcher"
 
 const meta_descr = "Здесь можно послушать всю музыку из игры Saboteur 2. Доступны все версии и релизы, начиная от оригинальной композиции и заканчивая современными обработками. ZX Spectrum, IBM PC, Commodore C64 и Amstrad CPC."
@@ -23,10 +24,19 @@ class PageMusic extends React.Component {
     }
 
     render() {
+        const originals = [];
+        const remixes = [];
+
+        for (const trackId in MusicList) {
+            const o = MusicList[trackId];
+            if (o.group == "originals") originals.push(o);
+            if (o.group == "remixes") remixes.push(o);
+        }
+
         return (
             <Layout {...{ footer_note, title, meta_descr }} id="article-music" className="mono-column">
                 <h1>Музыка из Saboteur 2</h1>
-                <section className="mono-column">
+                <section id="overview" className="mono-column">
 
                     <p>
                         Роб Хуббард (Rob Hubbard) является создателем оригинальной композиции в Saboteur 2.<br />
@@ -45,46 +55,118 @@ class PageMusic extends React.Component {
                     </p>
                 </section>
 
-                {/* In the following links, target and href attributes are only used when Javascript is disabled in browser,
-                    data-track is used for switching with React when JS is enabled.
-                 */}
-                <h3>Оригинальная музыка из релизов</h3>
-                <ul className="flex-container">
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx48k_sp" data-track="sab2_zx48k_sp">Spectrum 48k</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx128k_ay" data-track="sab2_zx128k_ay">Spectrum 128k</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_amstrad_cpc" data-track="sab2_amstrad_cpc">Amstrad CPC</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_c64" data-track="sab2_c64">Commodore C64</a></li>
-                </ul>
-                <h3>Обработки и ремиксы</h3>
-                <ul className="flex-container">
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_hubbard" data-track="sab2_hubbard">Rob Hubbard</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_marcel_donne" data-track="sab2_marcel_donne">Marcel Donne</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_marcel_donne_revisited" data-track="sab2_marcel_donne_revisited">Marcel Donne - Revisited</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_v2009" data-track="sab2_v2009">Saboteur 2 v2009</a></li>
-                    <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_endika" data-track="sab2_endika">Endika Fernandez - techno-mix</a></li>
-                </ul>
+                <section id="track-selection">
+                    {/* In the following links, target and href attributes are only used when Javascript is disabled in browser,
+                        data-track is used for switching with React when JS is enabled.
+                    */}
+                    <h3>Оригинальная музыка из релизов</h3>
+                    <ul className="flex-container">
+                        {
+                            originals.map(track => 
+                                <li key={ track.audiofile } className={ this.state.track == track.audiofile ? "current" : null}>
+                                    <a target="mus_subpage" className="track-switch" 
+                                        href={`saboteur2_mus_subpage?track=${track.audiofile}`}
+                                        data-track={ track.audiofile }
+                                        >
 
-                {/* This is a bit complicated way to have this page's functionality both with JS enabled and disabled. 
-                    See MusicTrackSwitcher component file for detailed description */}
-                <MusicTrackSwitcher track={this.state.track} jsShow></MusicTrackSwitcher>
-                <noscript>
-                    <iframe name="mus_subpage" src="saboteur2_mus_subpage?track=sab2_amstrad_cpc" frameborder="0" width="780px" height="550px"
-                        title="Страница с плеером музыки (переключается между треками ссылками выше)"
-                    ></iframe>
-                </noscript>
+                                        { track.linkText }
+                                    </a>
+                                </li>
+                            )
+                        }
+                        {/* <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx48k_sp" data-track="sab2_zx48k_sp">Spectrum 48k</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_zx128k_ay" data-track="sab2_zx128k_ay">Spectrum 128k</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_amstrad_cpc" data-track="sab2_amstrad_cpc">Amstrad CPC</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_c64" data-track="sab2_c64">Commodore C64</a></li> */}
+                    </ul>
+                    <h3>Обработки и ремиксы</h3>
+                    <ul className="flex-container">
+                        {
+                            remixes.map(track => 
+                                <li key={ track.audiofile } className={ this.state.track == track.audiofile ? "current" : null}>
+                                    <a target="mus_subpage" className="track-switch" 
+                                        href={`saboteur2_mus_subpage?track=${track.audiofile}`}
+                                        data-track={ track.audiofile }
+                                        >
 
-                <style jsx>{`
-                    article#article-music ul.flex-container {
+                                        { track.linkText }
+                                    </a>
+                                </li>
+                            )
+                        }
+                        {/* <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_hubbard" data-track="sab2_hubbard">Rob Hubbard</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_marcel_donne" data-track="sab2_marcel_donne">Marcel Donne</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_marcel_donne_revisited" data-track="sab2_marcel_donne_revisited">Marcel Donne - Revisited</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_v2009" data-track="sab2_v2009">Saboteur 2 v2009</a></li>
+                        <li><a target="mus_subpage" className="track-switch" href="saboteur2_mus_subpage?track=sab2_endika" data-track="sab2_endika">Endika Fernandez - techno-mix</a></li> */}
+                    </ul>
+                </section>
+
+                <section id="track-content">
+                    {/* This is a bit complicated way to have this page's functionality both with JS enabled and disabled. 
+                        See MusicTrackSwitcher component file for detailed description */}
+                    <MusicTrackSwitcher track={this.state.track} />
+                    <noscript>
+                        <iframe name="mus_subpage" src="saboteur2_mus_subpage?track=sab2_amstrad_cpc" frameborder="0" width="780px" height="550px"
+                            title="Страница с плеером музыки (переключается между треками ссылками выше)"
+                        ></iframe>
+                    </noscript>
+                </section>
+
+                {/* Sigh... another shortcoming of css-jsx. You can't combine 
+                    non-local and local specifiers: if I don't put this into 
+                    global I can't target html or do media-queries*/}
+                <style jsx global>{`
+                    ul.flex-container {
                         justify-content: center;
                         margin-top: 0.5em;
+                        margin-bottom: 2em;
                     }
-                    article#article-music ul.flex-container li {
+                    ul.flex-container li {
                         min-width: 8em;
                         padding: 0 1em;
                         margin-bottom: unset;
+                        margin-top: 0.4em;
                     }
                     a.track-switch {
                         cursor: pointer;
+                        font-size: 1.2em;
+                        color: darkorange;
+                    }
+                    html.hasJs article#article-music ul.flex-container li.current a {
+                        text-decoration: underline;
+                        color: #FF4500;
+                    }
+                    /* hide switcher on this page when Js disabled */
+                    article#article-music .music-track-switcher {
+                        display: none;
+                    }
+                    html.hasJs article#article-music .music-track-switcher {
+                        display: unset;
+                    }
+                    /* one column */
+                    @media (orientation: landscape) and (max-height: 415px) {
+                        section#track-selection {
+                            float: left;
+                            clear: left;
+                            width: 50%;
+                        }
+                        h3 {
+                            margin: 0;
+                        }
+                        ul.flex-container {
+                            margin-bottom: 1em;
+                        }
+                        /* section#track-content {
+                            float: right;
+                            clear: right;
+                            width: 50%;
+                        } */
+                        article#article-music::after {
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
                     }
                 `}</style>
             </Layout>

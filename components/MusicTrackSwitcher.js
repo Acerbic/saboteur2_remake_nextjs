@@ -24,8 +24,6 @@ import MusicTrack from './MusicTrack'
 
 /**
  * Props:
- *      jsShow: boolean     when set, hide this component initially and only 
- *                          show in client afterwards, using Javascript
  *      track: string       track id
  */
 class MusicTrackSwitcher extends React.Component {
@@ -33,21 +31,13 @@ class MusicTrackSwitcher extends React.Component {
     /**
      * Show component in browser
      */
-    componentDidMount() {
-        // technically, this check is redundant, since when jsShow is not true,
-        // the Javascript is disabled anyway.
-        if (this.props.jsShow) {
-            this.refs.track.style.display = 'unset';
-        }
-    }
-
     render () {
-        const { track, jsShow } = this.props;
-        const track_data = data[track];
+        const track_data = data[this.props.track];
     
         return (
-            <div style={ {display: jsShow? 'none' : undefined} } ref="track">
+            <div ref="track" className="music-track-switcher">
                 <MusicTrack {...track_data}></MusicTrack>
+
             </div>
         );
     }
