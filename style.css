@@ -92,7 +92,7 @@ p {
     div#weapons figure { min-width: 50%; }
 
     /*** page: music ****/
-    iframe[name=mus_subpage] { height: 700px; }
+    /*iframe[name=mus_subpage] { height: 700px; }
 
     body.subpage img.left {
         margin: 0 auto;
@@ -101,7 +101,7 @@ p {
         max-width: 100%;
         width: auto;
         max-height: 400px;
-    }
+    }*/
 }
 
 /* iPhone 6-8 */
@@ -112,10 +112,10 @@ p {
     div#moves { width: 345px; }
 
     /*** page: music ****/
-    article#article-music ul.flex-container li {
+    /*article#article-music ul.flex-container li {
         min-width: 30%;
         margin-bottom: 0.25em;
-    }
+    }*/
 }
 
 @media (max-width: 320px), (max-height: 320px) {
@@ -146,6 +146,7 @@ p {
     div#moves { margin-left: -20px; }
 
     /*** page: music ****/
-    article#article-music ul.flex-container li { margin-bottom: 0.5em; }
+    /*article#article-music ul.flex-container li { margin-bottom: 0.5em; }
     iframe[name=mus_subpage] { height: 650px; }
+    */
 }

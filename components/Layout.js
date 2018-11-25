@@ -14,6 +14,7 @@ import Disclaimer from './Disclaimer'
 class Layout extends React.Component {
 
     componentDidMount() {
+        document.getElementsByTagName('HTML')[0].classList.remove('noJs');
         document.getElementsByTagName('HTML')[0].classList.add('hasJs');
     }
 

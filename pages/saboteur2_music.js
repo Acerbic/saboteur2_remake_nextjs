@@ -107,7 +107,7 @@ class PageMusic extends React.Component {
                         See MusicTrackSwitcher component file for detailed description */}
                     <MusicTrackSwitcher track={this.state.track} />
                     <noscript>
-                        <iframe name="mus_subpage" src="saboteur2_mus_subpage?track=sab2_amstrad_cpc" frameborder="0" width="780px" height="550px"
+                        <iframe name="mus_subpage" src="saboteur2_mus_subpage?track=sab2_amstrad_cpc" frameborder="0"
                             title="Страница с плеером музыки (переключается между треками ссылками выше)"
                         ></iframe>
                     </noscript>
@@ -117,6 +117,10 @@ class PageMusic extends React.Component {
                     non-local and local specifiers: if I don't put this into 
                     global I can't target html or do media-queries*/}
                 <style jsx global>{`
+                    iframe {
+                        width: 100%;
+                        height: 550px;
+                    }
                     ul.flex-container {
                         justify-content: center;
                         margin-top: 0.5em;
@@ -144,30 +148,93 @@ class PageMusic extends React.Component {
                     html.hasJs article#article-music .music-track-switcher {
                         display: unset;
                     }
-                    /* one column */
+
                     @media (orientation: landscape) and (max-height: 415px) {
-                        section#track-selection {
+                        html footer {
+                            display: none;
+                        }
+    
+                        /* one column on the side when js enabled  */
+                        html.hasJs section#track-selection {
                             float: left;
                             clear: left;
-                            width: 50%;
+                            width: 40%;
                         }
-                        h3 {
+                        html.hasJs h3 {
                             margin: 0;
                         }
-                        ul.flex-container {
+                        html.hasJs ul.flex-container {
                             margin-bottom: 1em;
                         }
-                        /* section#track-content {
-                            float: right;
-                            clear: right;
-                            width: 50%;
-                        } */
-                        article#article-music::after {
+                        html.hasJs article#article-music::after {
                             content: "";
                             display: table;
                             clear: both;
                         }
+
+                        /* landscape and js disabled */
+                        html.noJs section#track-selection {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        html.noJs h3 {
+                            width: 20%;
+                            margin: 0;
+                            align-self: center;
+                        }
+                        html.noJs ul.flex-container {
+                            width: 80%;
+                            margin-bottom: 0.5em;
+                            justify-content: space-between;
+                            font-size: 0.9em;
+                        }
+                        html.noJs ul.flex-container li {
+                            padding: 0 0.4em;
+                            min-width: unset;
+                            text-align: center;
+                            flex-grow: 1;
+                        }
+                        html.noJs article#article-music iframe {
+                            max-height: 70vh;
+                        }
                     }
+
+                    @media (orientation: portrait) and (max-height: 824px) {
+                        html footer {
+                            display: none;
+                        }
+
+                        html.noJs article#article-music iframe {
+                            max-height: 65vh;
+                        }
+                        html.noJs section#track-selection {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        html.noJs h3 {
+                            height: 2em;
+                            margin: 0;
+                            align-self: center;
+                            margin-bottom: 1em;
+                        }
+                        html.noJs ul.flex-container {
+                            margin-bottom: 0.5em;
+                            justify-content: space-between;
+                            font-size: 0.9em;
+                        }
+                        html.noJs ul.flex-container li {
+                            padding: 0 0.4em;
+                            min-width: unset;
+                            text-align: center;
+                            flex-grow: 1;
+                            width: 100%
+                        }
+                        html.noJs h3:first-of-type { order: 1; width: 40%; }
+                        html.noJs h3:last-of-type { order: 2; width: 60%; }
+                        html.noJs ul.flex-container:first-of-type { order: 3; width: 40%; }
+                        html.noJs ul.flex-container:last-of-type { order: 4; width: 60%; }
+                    }
+
                 `}</style>
             </Layout>
         )

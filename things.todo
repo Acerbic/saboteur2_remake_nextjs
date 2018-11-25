@@ -14,9 +14,9 @@
     ✔ in burger menu put the "close" button into the corner (in case overlay is @done (11/24/2018, 1:22:02 PM) not visible on very small devices)
     ✔ BUG! layout problem on near-square clients where width is just slightly bigger than height @done (11/21/2018, 7:45:55 AM)
 ✔ Provide noscript for music page @done (11/3/2018, 1:02:18 AM)
-    ☐ fix styles for music nojs page
-        ☐ pics
-        ☐ text
+    ✔ fix styles for music nojs page @done (11/25/2018, 3:45:01 PM)
+        ✔ pics @done (11/25/2018, 3:45:02 PM)
+        ✔ text @done (11/25/2018, 3:45:03 PM)
 ✔ make music page layout (links <-> view) better @done (11/25/2018, 12:13:20 PM)
 ✔ fix links style on "Play" page @done (11/2/2018, 10:56:50 PM)
 ☐ Test and make work "next export" feature - esp with 'Map' and 'Music' pages

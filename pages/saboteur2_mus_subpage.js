@@ -3,6 +3,9 @@
  * (/saboteur2_music) when Javascript is off in the browser.
  */
 
+import 'reset-css'
+import '../style.css'
+
 import { withRouter } from 'next/router'
 import MusicTrackSwitcher from "../components/MusicTrackSwitcher";
 
@@ -11,7 +14,10 @@ class MusSubpage extends React.Component {
     // getting query argument 'track' - track id
     const {router} = this.props
     const track = router.query.track ? router.query.track : "sab2_zx48k_sp";
-    return <MusicTrackSwitcher track={track}></MusicTrackSwitcher>
+    return (
+        <MusicTrackSwitcher track={track}>
+        </MusicTrackSwitcher>
+    );
   }
 }
 

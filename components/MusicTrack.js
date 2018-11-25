@@ -34,8 +34,10 @@ class MusicTrack extends React.Component {
 
                     </audio>
                 </div>
-                <img src={image.src} className={ text ? "left" : "" } alt={image.alt} width={image.width} height={image.height} />
-                { text }
+                <div id="track-info">
+                    <img src={image.src} className={ text ? "left" : "" } alt={image.alt} width={image.width} height={image.height} />
+                    { text }
+                </div>
                 
                 <style jsx global>{`
                     .subpage {
@@ -77,12 +79,28 @@ class MusicTrack extends React.Component {
                         color: chocolate;
                     }
 
-                    /* one column */
-                    @media (orientation: landscape) and (max-height: 415px) {
-                        .subpage audio {
+                    /* make player fixed when in iframe */
+                    html.noJs .subpage .player {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                    html.noJs .subpage audio {
+                        margin: 0 auto;
+                    }
+                    html.noJs .subpage #track-info {
+                        padding-top: 64px;
+                        height: 100%;
+                        box-sizing: border-box;
+                    }
+
+                    /* one column when Js enabled (i.e. not in iframe) */
+                    @media (max-height: 415px) {
+                        html.hasJs .subpage audio {
                             max-width: 50%;
                         }
-                        .subpage img, .subpage img.left {
+                        html.hasJs .subpage img, html.hasJs .subpage img.left {
                             float: none;
                             max-width: unset;
                             max-height: 200px;
@@ -90,8 +108,20 @@ class MusicTrack extends React.Component {
                             max-width: 50%;
                             margin: 0 auto;
                         }
-                        .subpage {
+                        html.hasJs .subpage {
                             text-align: right;
+                        }
+
+                        html.noJs .subpage {
+                            position: absolute;
+                            top: 0; left: 0;
+                            right: 0; bottom: 0;
+                        }
+                        html.noJs .subpage img,
+                        html.noJs .subpage img.left {
+                            max-height: 100%;
+                            height: auto;
+                            width: auto;
                         }
                     }
                 `}</style>
