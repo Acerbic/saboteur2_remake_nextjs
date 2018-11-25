@@ -16,8 +16,6 @@ class ImageMap extends React.Component {
     constructor(props) {
         super(props);
 
-        // this state has no use, but I am leaving it for keeping a reference
-        // to map object, when it will be created, for debugging purposes
         this.state = { map: null };
     }
 
@@ -29,8 +27,24 @@ class ImageMap extends React.Component {
         // dynamic import
         import('./olMods')
             .then(({ olMap, olView, ImageLayer, ImageStatic, defaultControls, FullScreen }) => {
+                
+                const ol_map = document.querySelector("#ol-map");
+                const container = ol_map.parentElement;
+
+                // fitting into container
+                const container_size = this.getContentSize(container);
+                ol_map.style.height = `${container_size.height}px`;
+                ol_map.style.width = `${container_size.width}px`;
+
+                // adjusting to pixel-exact boundaries
+                const ol_par_rect = container.getBoundingClientRect();
+                ol_map.style.position = 'relative';
+                ol_map.style.left = `${Math.ceil(ol_par_rect.left) - ol_par_rect.left}px`;
+                ol_map.style.top = `${Math.ceil(ol_par_rect.top) - ol_par_rect.top}px`;
+                
                 const map = new olMap({
                     target: 'ol-map',
+                    pixelRatio: 1,
                     controls: defaultControls().extend([
                         new FullScreen({ label: 'Fullscreen' })
                     ]),
@@ -53,48 +67,73 @@ class ImageMap extends React.Component {
                         resolution: 1
                     })
                 });
-                // saving map object for future inspection with React Dev Tools
+                
                 this.setState({ map });
+
+                window.addEventListener("resize", () => {
+
+                    const container_size = this.getContentSize(container);
+                    ol_map.style.height = `${container_size.height}px`;
+                    ol_map.style.width = `${container_size.width}px`;
+
+                    this.state.map.updateSize();
+                })
             })
             .catch(e => console.log(e))
     }
 
     render() {
         return (
-            <div id="ol-container">
+            // <div id="ol-container">
                 <div id="ol-map">
+                    {/* Have to put this style into global, since DOM produced
+                        by OpenLayers doesn't receive style-jsx scoped class name
+                    */}
+                    <style jsx global>{`
+                        #ol-map {
+                            height: 100%;
+                        }
+                        button.ol-full-screen-false {
+                            font-weight: normal;
+                            width: unset;
+                            padding: 0 1em;
+                        }
+                    `}</style>
                 </div>
-                <style jsx>{`
-                    #ol-container {
-                        padding: 2em;
-                        width: 1001.3px;
-                        max-width: 90%;
-                        box-sizing: border-box;
-                        border: thin solid gray;
-                        margin: 0 auto;
-                        height: calc(100vh - 20em);
-                        /* this translate is an odd fix to an odd issue with
-                        OpenLayers library - when dimension of a container
-                        is ~just wrong~ (i.e. 1001.3px), there happens
-                        a rounding error and the image gets a bit distorted */
-                        transform: translateZ(0);
-                    }
-                    #ol-map {
-                        height: 100%;
-                    }
-                `}</style>
-                {/* Have to put this style into global, since DOM produced
-                    by OpenLayers doesn't receive style-jsx scoped class name
-                 */}
-                <style jsx global>{`
-                    button.ol-full-screen-false {
-                        font-weight: normal;
-                        width: unset;
-                        padding: 0 1em;
-                    }
-                `}</style>
-            </div>
+                
+                    // #ol-container {
+                    //     padding: 2em;
+                    //     width: 1002px;
+                    //     max-width: 90%;
+                    //     box-sizing: border-box;
+                    //     /* border: thin solid gray; */
+                    //     margin: 0 auto;
+                    //     height: calc(100vh - 20em);
+                    //     /* this translate is an odd fix to an odd issue with
+                    //     OpenLayers library - when dimension of a container
+                    //     is ~just wrong~ (i.e. 1001.3px), there happens
+                    //     a rounding error and the image gets a bit distorted */
+                    //     transform: translateZ(0);
+                    // }
+                
+            // </div>
         );
+    }
+
+    /**
+     * Get size of content-box of an element
+     * (see https://stackoverflow.com/questions/25197184/get-the-height-of-an-element-minus-padding-margin-border-widths)
+     * @param {HTMLElement} element 
+     */
+    getContentSize(element) {
+        const computedStyle = getComputedStyle(element);
+        
+        let elementHeight = element.clientHeight;  // height with padding
+        let elementWidth = element.clientWidth;   // width with padding
+        
+        elementHeight -= parseFloat(computedStyle.paddingTop) + parseFloat(computedStyle.paddingBottom);
+        elementWidth -= parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+        return {width: elementWidth, height: elementHeight}
     }
 };
 

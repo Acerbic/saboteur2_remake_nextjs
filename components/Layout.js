@@ -25,7 +25,7 @@ class Layout extends React.Component {
         };
         
         return (
-            <>
+            <div className="page">
                 <Head>
                     <title>{this.props.title}</title>
                     <meta charSet="UTF-8" />
@@ -39,9 +39,9 @@ class Layout extends React.Component {
                 <article {...article_attrs}>
                     {this.props.children}
                 </article>
-                <Footer>{this.props.footer_note}</Footer>
+                { this.props.footer_note ? <Footer>{this.props.footer_note}</Footer> : null }
                 <Disclaimer />
-            </>
+            </div>
         )
     }
 }
