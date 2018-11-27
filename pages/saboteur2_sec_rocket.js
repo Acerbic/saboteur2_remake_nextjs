@@ -15,7 +15,7 @@ export default () => (
             Это ее мы "перенацеливаем", вводя в ее терминал коды перфокарт.
         </p>
 
-        <img src="static/images/roket!sn.png" className="bordered" alt="" width="255" height="510"/>
+        <img src="/static/images/roket!sn.png" className="bordered" alt="" width="255" height="510"/>
 
         <p>
             Название ракеты - "Colonel Briggsy Explorer"<br/>
@@ -34,7 +34,7 @@ export default () => (
             столб (Fence) - то якобы ракета должна изчезнуть. Улететь.
         </p>
 
-        <img src="static/images/secret5.png" className="bordered" alt="" width="490" height="283"/>
+        <img src="/static/images/secret5.png" className="bordered" alt="" width="490" height="283"/>
 
         <p>
             Пробовали. Это не сработало.<br/>
@@ -43,13 +43,13 @@ export default () => (
             расстояние должно быть не менее 5 Саботеров. Это безопасное расстояние:
         </p>
 
-        <img src="static/images/5sabs10cm.png" className="bordered" alt="" width="510" height="289"/>
+        <img src="/static/images/5sabs10cm.png" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             При метании в столб справа от здания, возможности отойти на такое безопасное расстояние просто нет:
         </p>
 
-        <img src="static/images/1sabs10cm.png" className="bordered" alt="" width="510" height="289"/>
+        <img src="/static/images/1sabs10cm.png" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Отсюда мы можем сделать предположение, что для благополучного метания необходимо посетить тайную комнату с

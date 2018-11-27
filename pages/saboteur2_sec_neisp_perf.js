@@ -22,7 +22,7 @@ export default () => (
             Не их ли надо кидать в столб, находящийся в правой части здания?....
         </p>
 
-        <img src="static/images/steash_held.png" alt="" width="99" height="99"/>
+        <img src="/static/images/steash_held.png" alt="" width="99" height="99"/>
 
         <p>
             <Link href="saboteur2_secret"><a>НАЗАД</a></Link>

@@ -8,7 +8,7 @@ const footer_note = "Saboteur 2 - все об игре - Saboteur II - Avenging 
 export default () => (
     <Layout {...{footer_note, title, meta_descr}} className="mono-column">
         <h1>Saboteur 2 - Avenging Angel</h1>
-        <img src="static/images/sab2_zx1.png" alt="Загрузочный экран игры"
+        <img src="/static/images/sab2_zx1.png" alt="Загрузочный экран игры"
         width="256" height="192"
         className="bordered" />
 
@@ -34,7 +34,7 @@ export default () => (
         <p>Во-вторых, версия для ZX Spectrum является самой полной и самой красивой
         из всех 5 существующих релизов.</p>
 
-        <img src="static/images/videosab2.gif" alt="Фрагмент игрового процесса" width="256" height="192"/>
+        <img src="/static/images/videosab2.gif" alt="Фрагмент игрового процесса" width="256" height="192"/>
 
         <p>Надеюсь, Вам будет интересно изучение этого ресурса.</p>
 

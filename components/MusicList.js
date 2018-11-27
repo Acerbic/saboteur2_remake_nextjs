@@ -11,7 +11,7 @@ export default {
         linkText: "Spectrum 48k",
         group: "originals",
         image: {
-            src: "static/images/zx_spectrum_48k_.jpg",
+            src: "/static/images/zx_spectrum_48k_.jpg",
             alt: "Изображение ZX Spectrum 48K",
             width:"600",
             height:"441"
@@ -22,7 +22,7 @@ export default {
         linkText: "Spectrum 128k",
         group: "originals",
         image: {
-            src: "static/images/zx_spectrum_128k_.jpg",
+            src: "/static/images/zx_spectrum_128k_.jpg",
             alt: "Изображение ZX Spectrum 128K",
             width:"600",
             height:"385"
@@ -33,7 +33,7 @@ export default {
         linkText: "Amstrad CPC",
         group: "originals",
         image: {
-            src: "static/images/amstrad_cpc_.jpg",
+            src: "/static/images/amstrad_cpc_.jpg",
             alt: "Изображение компьютера Amstrad",
             width:"600",
             height:"391"
@@ -44,7 +44,7 @@ export default {
         linkText: "Commodore C64",
         group: "originals",
         image: {
-            src: "static/images/commodore_c64_.jpg",
+            src: "/static/images/commodore_c64_.jpg",
             alt: "Изображение компьютера Commodore 64",
             width:"600",
             height:"380"
@@ -56,7 +56,7 @@ export default {
         linkText: "Rob Hubbard",
         group: "remixes",
         image: {
-            src: "static/images/rob_hubbard_1.jpg",
+            src: "/static/images/rob_hubbard_1.jpg",
             alt: "Роб Хуббард",
             width:"579",
             height:"443"
@@ -73,7 +73,7 @@ export default {
         linkText: "Marcel Donne",
         group: "remixes",
         image: {
-            src: "static/images/marcel_donne.jpg",
+            src: "/static/images/marcel_donne.jpg",
             alt: "Марсель Донне",
             width:"579",
             height:"443"
@@ -90,7 +90,7 @@ export default {
         linkText: "Endika Fernandez - techno-mix",
         group: "remixes",
         image: {
-            src: "static/images/endika.jpg",
+            src: "/static/images/endika.jpg",
             alt: "Фото Эндика Фернандез",
             width:"600",
             height:"399"
@@ -114,7 +114,7 @@ export default {
         linkText: "Marcel Donne - Revisited",
         group: "remixes",
         image: {
-            src: "static/images/marcel_donne2.jpg",
+            src: "/static/images/marcel_donne2.jpg",
             alt: "Марсель Донне",
             width:"512",
             height:"679"
@@ -131,7 +131,7 @@ export default {
         linkText: "Saboteur 2 v2009",
         group: "remixes",
         image: {
-            src: "static/images/john_mcklain.jpg",
+            src: "/static/images/john_mcklain.jpg",
             alt: "Лого John McKlain",
             width:"541",
             height:"108"

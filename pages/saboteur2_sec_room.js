@@ -21,20 +21,20 @@ export default () => (
             Окажемся на козырьке:
         </p>
 
-        <img src="static/images/secret1_1.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret1_1.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Далее, бегите ВЛЕВО, потом на 2 экрана ВВЕРХ, теперь бегите НАЛЕВО, окажитесь на краю здания, падаете ВНИЗ, 
             пока не приземлитесь на козырьке c канатной дорожкой:
         </p>
 
-        <img src="static/images/secret1_2.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret1_2.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Бегите по веревке 2 экрана ВЛЕВО, не останавливаясь, пока не добежите до вышки с андроидом-охранником:
         </p>
 
-        <img src="static/images/secret1_3.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret1_3.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             далее, спускаемся ВНИЗ до упора и бежим ВПРАВО, подаем ВНИЗ, пролетаем 2 экрана и оказываемся на козырьке 
@@ -42,7 +42,7 @@ export default () => (
             ступенькам ВНИЗ:
         </p>
 
-        <img src="static/images/secret1_4.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret1_4.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Как спустимся со ступенек еще раз ВЛЕВО - окажемся в оружейной. Там будет много ящиков и охрана из 2-ух 
@@ -53,7 +53,7 @@ export default () => (
             Вот это место:
         </p>
 
-        <img src="static/images/secret1.png" className="bordered" alt="" width="490" height="283"/>
+        <img src="/static/images/secret1.png" className="bordered" alt="" width="490" height="283"/>
 
         <p>
             Подойдите к ящикам и встаньте так, чтобы одна нога была видна СПАВА от ящика, а друая скрывалась на ним - 
@@ -64,7 +64,7 @@ export default () => (
             Тут подробно показано КАК проникнуть в тайную комнату:
         </p>
 
-        <img src="static/images/secret_rooms.gif" className="bordered" alt="" width="510" height="289"/>
+        <img src="/static/images/secret_rooms.gif" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             После посещения этой комнаты вы получите "бессмертие".

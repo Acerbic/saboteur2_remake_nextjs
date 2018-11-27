@@ -14,7 +14,7 @@ export default () => (
 
         <section className="flex-container">
             <figure>
-                <img src="static/images/miss_1.png" alt="Текст 1й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_1.png" alt="Текст 1й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption><p>
                     Уровень 1<br/>
                     Название миссии : РИН<br/>
@@ -26,7 +26,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_2.png" alt="Текст 2й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_2.png" alt="Текст 2й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 2<br/>
                     Название миссии : КИО<br/>
@@ -37,7 +37,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_3.png" alt="Текст 3й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_3.png" alt="Текст 3й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 3<br/>
                     Название миссии : ТОХ<br/>
@@ -49,7 +49,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_4.png" alt="Текст 4й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_4.png" alt="Текст 4й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 4<br/>
                     Название миссии : ША<br/>
@@ -61,7 +61,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_5.png" alt="Текст 5й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_5.png" alt="Текст 5й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 5<br/>
                     Название миссии : КАЙ<br/>
@@ -73,7 +73,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_6.png" alt="Текст 6й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_6.png" alt="Текст 6й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
         
                     Уровень 6<br/>
@@ -86,7 +86,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_7.png" alt="Текст 7й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_7.png" alt="Текст 7й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 7<br/>
                     Название миссии : РЕТСУ<br/>
@@ -98,7 +98,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_8.png" alt="Текст 8й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_8.png" alt="Текст 8й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 8<br/>
                     Название миссии : ЗАЙ<br/>
@@ -110,7 +110,7 @@ export default () => (
             </figure>
     
             <figure>
-                <img src="static/images/miss_9.png" alt="Текст 9й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
+                <img src="/static/images/miss_9.png" alt="Текст 9й миссии (английский оригинал - изображение из игры)" width="547" height="204"/>
                 <figcaption>
                     Уровень 9<br/>
                     Название миссии : ЗЕН<br/>

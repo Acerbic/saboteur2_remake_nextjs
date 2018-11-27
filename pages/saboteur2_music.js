@@ -44,7 +44,7 @@ class PageMusic extends React.Component {
                         исходя из музыкальных чипов, установленных на них.
                     </p>
 
-                    <img src="static/images/rob_hubbard1.jpg" className="bordered" alt="Фото Роба Хуббарда" width="344" height="252" />
+                    <img src="/static/images/rob_hubbard1.jpg" className="bordered" alt="Фото Роба Хуббарда" width="344" height="252" />
 
                     <p>
                         Ниже, вы можете послушать каждую версию для конкретной игровой платформы.<br />

@@ -22,26 +22,26 @@ export default () => (
             показанной ниже:
         </p>
 
-        <img src="static/images/secret6_1.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret6_1.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Далее, спускаетесь с нее по лестнице ВНИЗ, потом идете ВПРАВО, вы окажитесь на краю выступа здания - 
             падаете ВНИЗ. Приземляетесь на площадку с андроидом-охранником:
         </p>
 
-        <img src="static/images/secret6_2.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret6_2.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Идите к лестнице и лезте по ней ВВЕРХ. Далее - ВПРАВО. Окажитесь на козырьке с канатной дорогой:
         </p>
 
-        <img src="static/images/secret6_3.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret6_3.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Теперь бегите не останавливаясь по веревке ВПРАВО 6 экранов до противоположенной вышки.
         </p>
 
-        <img src="static/images/secret6_4.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret6_4.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Как доберетесь до нее - развернитесь, и бегите ОБРАТНО, в ЛЕВУЮ сторону. ВНИМАНИЕ! Когда будете бежать 5-ый 
@@ -51,16 +51,16 @@ export default () => (
             правильно ЭТО сделать:
         </p>
 
-        <img src="static/images/secret6_jmp1.png" className="bordered" alt="" width="510" height="289"/>
+        <img src="/static/images/secret6_jmp1.png" className="bordered" alt="" width="510" height="289"/>
 
-        <img src="static/images/secret6_jmp2.png" className="bordered" alt="" width="510" height="289"/>
+        <img src="/static/images/secret6_jmp2.png" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Пролетев 3 экрана ВНИЗ, вы окажитесь на козырьке, выступающем со стены здания. если теперь пройти ВЛЕВО, 
             вы найдете что искали. В ящичке будет заветная перфокарта:
         </p>
 
-        <img src="static/images/secret6.png" className="bordered" alt="" width="490" height="283"/>
+        <img src="/static/images/secret6.png" className="bordered" alt="" width="490" height="283"/>
 
         <p>
             <Link href="saboteur2_secret"><a>НАЗАД</a></Link>

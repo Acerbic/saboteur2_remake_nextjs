@@ -40,52 +40,52 @@ export default () => (
             <div className="release">
                 <h2>ZX Spectrum</h2>
                 <ul className="flex-container">
-                    <li><img src="static/images/release_zx_spectrum_cass.jpg" className="cover-illustration" alt="" width="400" height="244"/></li>
-                    <li><img src="static/images/sab2_zx1.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_zx2.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_zx3.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_zx4.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
+                    <li><img src="/static/images/release_zx_spectrum_cass.jpg" className="cover-illustration" alt="" width="400" height="244"/></li>
+                    <li><img src="/static/images/sab2_zx1.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_zx2.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_zx3.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_zx4.png" className="bordered" alt="Иллюстрация игры для ZX 48K" width="256" height="192"/></li>
                 </ul>
             </div>
     
             <div className="release">
                 <h2>IBM PC</h2>
                 <ul className="flex-container">
-                    <li><img src="static/images/release_ibm_pc_disk.jpg" className="cover-illustration" alt="" width="291" height="371"/></li>
-                    <li><img src="static/images/sab2_pc1.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_pc2.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_pc3.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_pc4.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
+                    <li><img src="/static/images/release_ibm_pc_disk.jpg" className="cover-illustration" alt="" width="291" height="371"/></li>
+                    <li><img src="/static/images/sab2_pc1.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_pc2.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_pc3.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_pc4.png" className="bordered" alt="Иллюстрация игры для ZX 128K" width="256" height="192"/></li>
                 </ul>
             </div>
     
             <div className="release">
                 <h2>Amstrad CPC</h2>
                 <ul className="flex-container">
-                    <li><img src="static/images/release_cpc_disk.jpg" className="cover-illustration" alt="" width="400" height="200"/></li>
-                    <li><img src="static/images/sab2_cpc1.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_cpc2.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_cpc3.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
-                    <li><img src="static/images/sab2_cpc4.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
+                    <li><img src="/static/images/release_cpc_disk.jpg" className="cover-illustration" alt="" width="400" height="200"/></li>
+                    <li><img src="/static/images/sab2_cpc1.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_cpc2.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_cpc3.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
+                    <li><img src="/static/images/sab2_cpc4.png" className="bordered" alt="Иллюстрация игры для Amstrad CPC" width="256" height="192"/></li>
                 </ul>
             </div>
     
             <div className="release">
                 <h2>Commodore C64</h2>
                 <ul className="flex-container">
-                    <li><img src="static/images/release_c64_disk.jpg" className="cover-illustration" alt="" width="291" height="400"/></li>
-                    <li><img src="static/images/sab2_c641.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
-                    <li><img src="static/images/sab2_c642.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
-                    <li><img src="static/images/sab2_c643.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
-                    <li><img src="static/images/sab2_c644.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
+                    <li><img src="/static/images/release_c64_disk.jpg" className="cover-illustration" alt="" width="291" height="400"/></li>
+                    <li><img src="/static/images/sab2_c641.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
+                    <li><img src="/static/images/sab2_c642.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
+                    <li><img src="/static/images/sab2_c643.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
+                    <li><img src="/static/images/sab2_c644.png" className="bordered" alt="Иллюстрация игры для Commodore C64" width="286" height="200"/></li>
                 </ul>
             </div>
     
             <div className="release">
                 <h2>Commodore Plus/4</h2>
                 <ul className="flex-container">
-                    <li><img src="static/images/sab2_cplus41.png" className="bordered" alt="Иллюстрация игры для Commodore Plus/4" width="286" height="200"/></li>
-                    <li><img src="static/images/sab2_cplus42.png" className="bordered" alt="Иллюстрация игры для Commodore Plus/4" width="286" height="200"/></li>
+                    <li><img src="/static/images/sab2_cplus41.png" className="bordered" alt="Иллюстрация игры для Commodore Plus/4" width="286" height="200"/></li>
+                    <li><img src="/static/images/sab2_cplus42.png" className="bordered" alt="Иллюстрация игры для Commodore Plus/4" width="286" height="200"/></li>
                 </ul>
             </div>
         </section>

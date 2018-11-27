@@ -7,7 +7,7 @@ export default () => (
     <Layout {...{footer_note, title, meta_descr}} id="article-play" className="mono-column">
 
         <h1>Играть Saboteur 2 сегодня!</h1>
-        <img src="static/images/sab2_zx1.png" alt="Загрузочный экран игры" width="256" height="192"/>
+        <img src="/static/images/sab2_zx1.png" alt="Загрузочный экран игры" width="256" height="192"/>
 
         <p>
             Несмотря на прошедшие годы, вы можете сыграть в эту игру и сегодня - используя эмуляторы!

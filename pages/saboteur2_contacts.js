@@ -8,7 +8,7 @@ export default () => (
         <h1>Контакты</h1>
 
         <p>Все вопросы, дополнения и пожелания, пишите сюда:</p>
-        <img src="static/images/email3.png" alt="Конверт и адрес email - sabotwo@gmail.com" width="398" height="267"/>
+        <img src="/static/images/email3.png" alt="Конверт и адрес email - sabotwo@gmail.com" width="398" height="267"/>
 
     </Layout>
 )

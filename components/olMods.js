@@ -8,10 +8,6 @@
 
 export {default as olMap} from 'ol/Map'
 export {default as olView} from 'ol/View'
-export {default as ImageLayer} from 'ol/layer/Image'
 export {default as TileLayer} from 'ol/layer/Tile.js'
-export {default as ImageStatic} from 'ol/source/ImageStatic'
-export {default as TileImage} from 'ol/source/TileImage'
-export {default as TileGrid} from 'ol/tilegrid/TileGrid'
-export {defaults as defaultControls, FullScreen} from 'ol/control.js'
 export {XYZ} from 'ol/source.js'
+export {defaults as defaultControls, FullScreen} from 'ol/control.js'

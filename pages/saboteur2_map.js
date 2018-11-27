@@ -22,7 +22,7 @@ export default class MapPage extends React.Component {
                         Уменьшенная точная карта здания :
                     </p>
                     
-                    <img src="static/images/saboteur2_map_sm640.png" alt="Маленькая версия карты" width="640" height="360"/>
+                    <img src="/static/images/saboteur2_map_sm640.png" alt="Маленькая версия карты" width="640" height="360"/>
                     
                     <p>
                         Полноразмерная подробная карта здания :<br />
@@ -30,7 +30,7 @@ export default class MapPage extends React.Component {
                     </p>
                     
                     <div id="map-container">
-                        <img src="static/images/saboteur2_map.png" alt="ОЧЕНЬ большой файл с картой" width="8192" height="4608"/>
+                        <img src="/static/images/saboteur2_map.png" alt="ОЧЕНЬ большой файл с картой" width="8192" height="4608"/>
                     </div>
                 </noscript>
         

@@ -7,16 +7,16 @@ export default () => (
     <Layout {...{footer_note, title, meta_descr}}>
         <h1>Враги</h1>
         <h3>Андроид охранник</h3>
-        <img src="static/images/android_stay.png" alt="Андроид стоит" width="170" height="122"/>
-        <img src="static/images/android_leg.png" alt="Андроид пинает" width="170" height="122"/>
-        <img src="static/images/android_gun.png" alt="Андроид стреляет" width="170" height="122"/>
-        <img src="static/images/android_flames.gif" alt="Андроид испускает пламя" width="255" height="122"/>
+        <img src="/static/images/android_stay.png" alt="Андроид стоит" width="170" height="122"/>
+        <img src="/static/images/android_leg.png" alt="Андроид пинает" width="170" height="122"/>
+        <img src="/static/images/android_gun.png" alt="Андроид стреляет" width="170" height="122"/>
+        <img src="/static/images/android_flames.gif" alt="Андроид испускает пламя" width="255" height="122"/>
 
         <h3>Пума</h3>
-        <img src="static/images/puma.png" alt="Пума" width="170" height="122"/>
+        <img src="/static/images/puma.png" alt="Пума" width="170" height="122"/>
 
         <h3>Летучая мышь</h3>
-        <img src="static/images/flying_bat.png" alt="Летучая мышь" width="170" height="122"/>
+        <img src="/static/images/flying_bat.png" alt="Летучая мышь" width="170" height="122"/>
 
     </Layout>
 )

@@ -10,17 +10,17 @@ export default () => (
         <h1>Звук загрузки Saboteur 2 с кассеты!</h1>
 
         <audio controls="controls">
-            <source src="static/audio/sab2_tape.ogg" type="audio/ogg" />
-            <source src="static/audio/sab2_tape.mp3" type="audio/mp3" />
+            <source src="/static/audio/sab2_tape.ogg" type="audio/ogg" />
+            <source src="/static/audio/sab2_tape.mp3" type="audio/mp3" />
             <p className="update-warning">
                 Обновите браузер, или используйте браузер совместимый с HTML5, чтобы прослушать музыку. Также вы можете
-                скачать звуковой файл <a href="static/audio/sab2_tape.ogg">OGG</a> либо <a href="static/audio/sab2_tape.mp3">MP3</a>
+                скачать звуковой файл <a href="/static/audio/sab2_tape.ogg">OGG</a> либо <a href="/static/audio/sab2_tape.mp3">MP3</a>
                 и использовать ваш системный плеер.
             </p>
         </audio>
 
         <figure>
-            <img src="static/images/sab2_cass.png" alt="" width="600" height="450"/>
+            <img src="/static/images/sab2_cass.png" alt="" width="600" height="450"/>
             <figcaption>
                 <p>
                     Кстати, это та самая "Blue Cassette" (Синяя Кассета), о которой так много говориться при загрузке игры на 
@@ -30,7 +30,7 @@ export default () => (
         </figure>
 
         <figure>
-            <img src="static/images/reward.png" alt="" width="592" height="439"/>
+            <img src="/static/images/reward.png" alt="" width="592" height="439"/>
             <figcaption>
                 <p>
                     Если дословно, то фирма Durell обещает БЕСПЛАТНО обменять Вашу поддельную копию игры на фирменную, и, 

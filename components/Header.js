@@ -18,8 +18,8 @@ const Header = ({ page, router }) => {
                 <Link href="/">
                     <a>
                         <img 
-                            src="static/images/banner.png" alt="Saboteur 2 in custom font" width="640" height="125" 
-                            srcSet="static/images/320x_banner.png 320w, static/images/480x_banner.png 480w, static/images/banner.png 640w"
+                            src="/static/images/banner.png" alt="Saboteur 2 in custom font" width="640" height="125" 
+                            srcSet="/static/images/320x_banner.png 320w, /static/images/480x_banner.png 480w, /static/images/banner.png 640w"
                             sizes="(max-width: 320px) 320px, (max-width: 480px) 464px, 600px"
                         /> 
                     </a>

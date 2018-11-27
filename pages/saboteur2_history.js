@@ -16,7 +16,7 @@ export default () => (
         <figure>
             <figcaption>Clive Townsend</figcaption>
 
-            <img src="static/images/clive_townsend1.jpg" className="bordered" alt="Фото Клайва Таунсенда" width="438" height="486"/>
+            <img src="/static/images/clive_townsend1.jpg" className="bordered" alt="Фото Клайва Таунсенда" width="438" height="486"/>
 
             <p className="image-description">
                 Мистер Крутой собственной персоной, Главный Саботёр Клив Таунсенд.<br/>
@@ -35,7 +35,7 @@ export default () => (
         <figure>
             <figcaption>Вся тогдашняя команда Durell в сборе: (1986 год)</figcaption>
 
-            <img src="static/images/durell_team.jpg" className="bordered" alt="" width="332" height="418"/>
+            <img src="/static/images/durell_team.jpg" className="bordered" alt="" width="332" height="418"/>
 
             <p>
                 Справа на фото мы можем наблюдать нашего любимого Клива.<br/>
@@ -50,9 +50,9 @@ export default () => (
         <figure id="sab1-images">
             <figcaption>Saboteur! (1986)</figcaption>
 
-            <img src="static/images/sab1_1.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
-            <img src="static/images/sab1_2.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
-            <img src="static/images/sab1_3.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
+            <img src="/static/images/sab1_1.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
+            <img src="/static/images/sab1_2.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
+            <img src="/static/images/sab1_3.png" className="bordered" alt="Скрин игры Saboteur!" width="256" height="192"/>
         </figure>
 
         <style jsx>{`

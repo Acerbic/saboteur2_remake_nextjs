@@ -22,7 +22,7 @@ code. The Next.JS framework provides default web-server (based of Node.js,
 naturally) and the code of this project - pages and components partially run
 on the server (server side rendering) and partially in the client browser.
 
-## Commands ##
+## Build and dev ##
 
 This project uses [Yarn][yarn], so if you don't have it, you need to install it
 first.
@@ -57,6 +57,16 @@ yarn analyze
 yarn analyze:server
 yarn analyze:browser
 ```
+
+Export site to a static set of files (*.html, *.js, *.css). This way you don't
+have to have a Node.JS hosting to run a webserver, any static files hosting will
+suffice. The result is in "./out" directory.
+
+```bash
+yarn build
+yarn export
+```
+
 
 [orig]: http://www.saboteur2.ru
 [rm1]: https://bitbucket.org/GlebVarenov/saboteur2_remake#readme

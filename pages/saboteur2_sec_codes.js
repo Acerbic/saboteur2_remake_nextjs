@@ -18,7 +18,7 @@ export default () => (
         </p>
         <figure>
             <figcaption><p>JONIN, KIME, KUJI KIRI, SAIMENJITSU, GENIN, MI LU KATA, DIM MAK, SATORI</p></figcaption>
-            <img src="static/images/mission_codes.png" className="bordered" alt="Коды к уровням" width="454" height="454"/>
+            <img src="/static/images/mission_codes.png" className="bordered" alt="Коды к уровням" width="454" height="454"/>
         </figure>
 
         <p>Коды надо вводить в разделе главного меню ALTER MISSION.</p>

@@ -19,36 +19,36 @@ export default () => (
             Летим на дельтаплане до самого конца, пока Саботер сам не спрынет с него. Окажемся на козырьке:
         </p>
 
-        <img src="static/images/secret2_1.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret2_1.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Далее, спускаемся ВНИЗ, бежим ВЛЕВО, снова ВНИЗ, бежим 2 экрана ВПРАВО, потом ВНИЗ до упора (2 экрана), потом ВЛЕВО, будет вот такое препятствие-"ездилка":
         </p>
 
-        <img src="static/images/secret2_2.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret2_2.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Синхронно пробегаем по этой "ездилке" ВЛЕВО, теперь ВНИЗ до упора (3 экрана), как спуститесь, бегите ВПРАВО на 2 экрана, потом ВНИЗ - увидите комнату с ДВУМЯ лестницами ведущими вниз и двумя охранниками:
         </p>
 
-        <img src="static/images/secret2_3.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret2_3.png" className="bordered" alt="" width="255" height="170"/>
         <p>
             По ЛЮБОЙ из этиз лестниц спускаетесь на 4 этажа ВНИЗ и бегите ВЛЕВО. Через 2 экрана окажитесь в переходе в подземелье:
         </p>
 
-        <img src="static/images/secret2_4.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret2_4.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Забегаете туда, бежите еще 4 экрана ВЛЕВО, и окажитесь на лестнице, ведущей только ВНИЗ:
         </p>
 
-        <img src="static/images/secret2_5.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret2_5.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Спускаетесь по этой лестнице на 4 этажа ВНИЗ и там увидите ответвление ВПРАВО. Идите туда - будет тупик, и там находится ящик "сбесконечными" перфокартами: Вот это место:
         </p>
 
-        <img src="static/images/secret2.png" className="bordered" alt="" width="490" height="283"/>
+        <img src="/static/images/secret2.png" className="bordered" alt="" width="490" height="283"/>
 
         <p>
             <Link href="saboteur2_secret"><a>НАЗАД</a></Link>

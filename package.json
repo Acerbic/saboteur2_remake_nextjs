@@ -8,6 +8,7 @@
   "repository": "git@bitbucket.org:GlebVarenov/saboteur2_remake_nextjs.git",
   "scripts": {
     "dev": "next",
+    "next": "next",
     "build": "next build",
     "start": "next start",
     "analyze": "cross-env BUNDLE_ANALYZE=both yarn build",

@@ -22,27 +22,27 @@ export default () => (
             Летим на дельтаплане до самого конца, пока Саботер сам не спрынет с него. Окажемся на козырьке:
         </p>
 
-        <img src="static/images/secret3_1.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret3_1.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Далее, бегите ВЛЕВО, потом на 2 экрана ВВЕРХ, теперь бегите НАЛЕВО, спрыгиваете ВНИЗ, падаете, пока не 
             окажитесь на козырьке c канатной дорожкой:
         </p>
 
-        <img src="static/images/secret3_2.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret3_2.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             Бегите по веревке 2 экрана ВЛЕВО, не останавливаясь, пока не добежите до вышки с андроидом-охранником:
         </p>
 
-        <img src="static/images/secret3_3.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret3_3.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             далее, спускаемся ВНИЗ до упора и бежим на 2 экрана ВЛЕВО. Оказываемся на краю здания, и падаем ВНИЗ. 
             Приземляемся на лужайке с мертвым деревом:
         </p>
 
-        <img src="static/images/secret3_4.png" className="bordered" alt="" width="255" height="170"/>
+        <img src="/static/images/secret3_4.png" className="bordered" alt="" width="255" height="170"/>
 
         <p>
             А теперь - отбегаем в ЛЕВУЮ часть экрана, и, разбегаясь - ПРЫГАЕМ прямо в стену, которая будет у нас СПРАВА.
@@ -54,7 +54,7 @@ export default () => (
             Сдесь подробно показано действие телепорта:
         </p>
 
-        <img src="static/images/secret_teleport.gif" className="bordered" alt="" width="510" height="289"/>
+        <img src="/static/images/secret_teleport.gif" className="bordered" alt="" width="510" height="289"/>
 
         <p>
             Помимо прямого использования телепорта, как способа быстрого перемещения на противоположенную сторону 
