@@ -53,7 +53,7 @@ class ImageMap2 extends React.Component {
                         new TileLayer({
                             /* hell if I know what those multiplicators are
                             about */
-                            extent: [-8192*256*16, -8192*256*16, 8192*256*16, 8192*256*16],
+                            extent: [-8192*256*16, -4608*256*16, 8192*256*16, 4608*256*18],
                             source: new XYZ({
                                 wrapX: false,
                                 url: '/static/images/maptiles/{z}-{x}-{y}.png',
@@ -63,7 +63,7 @@ class ImageMap2 extends React.Component {
                     view: new olView({
                         // constraints
                         /* need some tinkering with boundaries...*/
-                        extent: [-8192*256*10, -4608*256*12, 8192*256*10, 4608*256*16],
+                        extent: [-8192*256*9, -4608*256*2, 8192*256*9, 4608*256*16],
                         minZoom: 1,
                         maxZoom: 5,
                         enableRotation: false,

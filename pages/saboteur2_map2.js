@@ -32,6 +32,7 @@ export default class MapPage2 extends React.Component {
 
                 <style jsx global>{`
                     #ol-container {
+                        background: beige;
                         padding: 2em;
                         width: 1002px;
                         max-width: 90%;
