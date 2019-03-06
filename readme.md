@@ -22,6 +22,12 @@ code. The Next.JS framework provides default web-server (based of Node.js,
 naturally) and the code of this project - pages and components partially run
 on the server (server side rendering) and partially in the client browser.
 
+## Supported browsers ##
+
+- Modern FF, Chrome.
+- IE 11+ (due to Next.JS)
+- MS Edge
+
 ## Build and dev ##
 
 This project uses [Yarn][yarn], so if you don't have it, you need to install it
@@ -66,7 +72,6 @@ suffice. The result is in "./out" directory.
 yarn build
 yarn export
 ```
-
 
 [orig]: http://www.saboteur2.ru
 [rm1]: https://bitbucket.org/GlebVarenov/saboteur2_remake#readme

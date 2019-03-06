@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html className="noJs"> {/*  <--- this is the only reason for this whole file to exist */}
+      <html className="noJs" lang="ru-RU"> {/*  <--- this is the only reason for this whole file to exist */}
         <Head />
         <body>
           <Main />

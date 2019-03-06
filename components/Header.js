@@ -103,8 +103,8 @@ const Header = ({ page, router }) => {
                     html.hasJs #header-logo img {
                         /* Unsetting scale limits to keep burger menu
                            button in size with image  */
-                        min-width: unset;
-                        max-width: unset;
+                        min-width: 0;
+                        max-width: none;
                     }
                 }
 
