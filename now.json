@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "saboteur2_remake_nextjs",
+    "alias": "saboteur2-remake-nextjs.now.sh",
+    "build": {
+        "env": {
+            "NEXT_SERVERLESS": "true"
+        }
+    },
+    "builds": [
+        { "src": "/static/*", "use": "@now/static" },
+        { "src": "next.config.js", "use": "@now/next" }
+    ],
+    "public": true
+}

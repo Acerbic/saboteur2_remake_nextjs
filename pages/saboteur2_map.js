@@ -49,6 +49,9 @@ export default class MapPage extends React.Component {
                 `}</style>
 
                 <style jsx global>{`
+                    html.noJs #ol-container {
+                        display: none;
+                    }
                     #ol-container {
                         padding: 2em;
                         width: 1002px;

@@ -29,7 +29,10 @@ export default () => (
         </p>
 
         <style jsx>{`
-            article#article-secrets li {
+            ul {
+                justify-content: center;
+            }
+            li {
                 min-width: 20%;
                 margin: 0 0.5em 2em;
             }

@@ -24,6 +24,10 @@ on the server (server side rendering) and partially in the client browser.
 
 ## Supported browsers ##
 
+This site will work correctly, even if JS is disabled in the browser.
+
+Target browsers are:
+
 - Modern FF, Chrome.
 - IE 11+ (due to Next.JS)
 - MS Edge
@@ -33,11 +37,13 @@ on the server (server side rendering) and partially in the client browser.
 This project uses [Yarn][yarn], so if you don't have it, you need to install it
 first.
 
-Install
+### Install ###
 
 ```bash
 yarn install
 ```
+
+### Dev ###
 
 Run dev local server (available on http://localhost:3000). This will spawn
 server instance process, with automatic recompile when files
@@ -47,14 +53,31 @@ change and hot reload.
 yarn dev
 ```
 
-Production build and server
+### Deployment to [Zeit.Now][now] - serverless lambdas ###
+
+Should have `now` installed globally:
+
+```bash
+npm i -g now
+```
+
+Deploy and assign alias (see now.json for config)
+
+```bash
+now
+now alias
+```
+
+### Production build and NodeJS server ###
 
 ```bash
 yarn build
 yarn start
 ```
 
-Webpack Bundle Analyzer - get stats on data load to be server to webpage.
+### Webpack Bundle Analyzer ###
+
+Webpack Bundle Analyzer get stats on data load to be server to webpage.
 Use one of the following commands (the first one creates both of  the  reports,
 for browser and a server)
 
@@ -63,6 +86,8 @@ yarn analyze
 yarn analyze:server
 yarn analyze:browser
 ```
+
+### Static hosting server ###
 
 Export site to a static set of files (*.html, *.js, *.css). This way you don't
 have to have a Node.JS hosting to run a webserver, any static files hosting will
@@ -77,3 +102,4 @@ yarn export
 [rm1]: https://bitbucket.org/GlebVarenov/saboteur2_remake#readme
 [nextjs]: https://nextjs.org/
 [yarn]: https://yarnpkg.com/en/
+[now]: https://zeit.co/now

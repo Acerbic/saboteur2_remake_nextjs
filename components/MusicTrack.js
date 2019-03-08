@@ -6,13 +6,19 @@
 import React from 'react';
 
 class MusicTrack extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.audioRef = React.createRef();
+    }
     /**
      * After tracks switched (and props updated), causing different "src" in
      * <audio>, the player object still retains the previous sound file in use.
      * This forces to reevaluate "src" attribute and load teh new file
      */
     componentDidUpdate() {
-        this.refs.audio.load();
+        this.audioRef.current.load();
     }
 
     render() {
@@ -22,7 +28,7 @@ class MusicTrack extends React.Component {
         return (
             <section className="subpage">
                 <div className="player">
-                    <audio controls ref="audio">
+                    <audio controls ref={this.audioRef}>
                         <source src={oggfile} type="audio/ogg" />
                         <source src={mp3file} type="audio/mp3" />
 

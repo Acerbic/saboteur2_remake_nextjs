@@ -13,7 +13,9 @@ const withBA = withBundleAnalyzer({
       analyzerMode: 'static',
       reportFilename: '../bundles/client.html'
     }
-  }
+  },
+  // serverless for Zeit Now deployment, regular server otherwise
+  target: process.env.NEXT_SERVERLESS ? "serverless" : "server"
 });
 
 module.exports = withCSS(withBA);

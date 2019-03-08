@@ -11,7 +11,7 @@ export default () => (
                 упражнение в HTML5+CSS. Авторские права на статьи сайта и все 
                 визуальные решения принадлежат автору исходного сайта. Я 
                 всего лишь перевёл содержимое на современные веб технологии.
-                См. <a href="https://bitbucket.org/GlebVarenov/saboteur2_remake#readme">
+                См. <a href="https://bitbucket.org/GlebVarenov/saboteur2_remake_nextjs/src/master/">
                 проект</a> на Bitbucket.
             </div>
         </div>

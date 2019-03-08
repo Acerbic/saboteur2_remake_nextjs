@@ -1,0 +1,13 @@
+node_modules
+
+# build artifacts
+.next
+out
+bundles
+
+# editors
+.vscode
+
+# meta and docs
+tilegen.bat
+things.todo

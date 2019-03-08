@@ -20,6 +20,7 @@ export default (props) => (
             }
             footer {
                 margin-top: 1em;
+                margin-bottom: 1em;
             }
         `}</style>
     </footer>

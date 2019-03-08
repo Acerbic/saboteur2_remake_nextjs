@@ -35,13 +35,11 @@ class MusicTrackSwitcher extends React.Component {
         const track_data = data[this.props.track];
     
         return (
-            <div ref="track" className="music-track-switcher">
+            <div className="music-track-switcher">
                 <MusicTrack {...track_data}></MusicTrack>
-
             </div>
         );
     }
 }
-
 
 export default MusicTrackSwitcher
